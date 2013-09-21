@@ -1,3 +1,4 @@
+# Mental Ray Syntax Highlighter #
 **Version 1** Released September 12, 2013  
 by Andrew Hazelden
 
