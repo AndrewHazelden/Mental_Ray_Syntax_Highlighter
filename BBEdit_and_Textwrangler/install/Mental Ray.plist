@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<!-- 
+
+  Mental Ray Codeless Language Module for BBEdit and TextWrangler
+  Version 1.0 - Sept 12, 2013
+
+  Created by Andrew Hazelden
+  andrew@andrewhazelden.com
+  http://www.andrewhazelden.com
+  
+  Released under a Creative Commons Attribution-ShareAlike License:
+	<http://creativecommons.org/licenses/by-sa/2.0/>
+
+  To install, copy here:
+    
+      ~/Library/Application Support/BBEdit/Language Modules/
+
+  or here:
+
+    ~/Library/Application Support/TextWrangler/Language Modules/
+
+  and relaunch BBEdit or TextWrangler.
+
+-->
+
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+
+	<key>BBLMColorsSyntax</key>
+	<true/>
+
+	<key>Copyright</key>
+	<string>Copyright © 2013, Andrew Hazelden</string>
+	
+	<key>Author</key>
+	<string>Andrew Hazelden</string>
+	
+	<key>Version</key>
+	<string>1.0</string>
+
+	<key>BBLMIsCaseSensitive</key>
+	<false/>
+
+	<key>BBLMLanguageCode</key>
+	<string>MI</string>
+
+	<key>BBLMLanguageDisplayName</key>
+	<string>Mental Ray</string>
+
+	<key>BBLMScansFunctions</key>
+	<false/>
+  
+	<key>BBLMSuffixMap</key> 
+	<array> 
+	<dict> 
+	  <key>BBLMLanguageSuffix</key> 
+	  <string>.mi</string>
+	</dict>
+	</array> 
+ 
+	<key>BBLMPreferredFilenameExtension</key>
+	<string>mi</string>
+
+	<key>BBLMSupportsTextCompletion</key>
+	<true/>
+
+	<key>BBLMCommentLineDefault</key>
+	<string>#</string>
+
+	<key>BBLMKeywordList</key>
+	<array>
+    <string>#eleseifeq</string>
+		<string>#if</string>
+		<string>$code</string>
+		<string>$else</string>
+		<string>$elseifdef</string>
+		<string>$end</string>
+		<string>$endif</string>
+		<string>$ifdef</string>
+		<string>$ifeq</string>
+		<string>$ifndef</string>
+		<string>$ifndef</string>
+		<string>$ifneq</string>
+		<string>$include</string>
+		<string>$lookup</string>
+		<string>apply</string>
+		<string>call</string>
+		<string>code</string>
+		<string>contour</string>
+		<string>control</string>
+		<string>debug</string>
+		<string>declare</string>
+		<string>default</string>
+		<string>delete</string>
+		<string>derivative</string>
+		<string>displace</string>
+		<string>echo</string>
+		<string>emitter</string>
+		<string>end</string>
+		<string>enum</string>
+		<string>environment</string>
+		<string>false</string>
+		<string>gui</string>
+		<string>if</string>
+		<string>interface</string>
+		<string>lens</string>
+		<string>lightmap</string>
+		<string>link</string>
+		<string>max</string>
+		<string>mi</string>
+		<string>min</string>
+		<string>namespace</string>
+		<string>nodeid</string>
+		<string>not</string>
+		<string>off</string>
+		<string>on</string>
+		<string>opaque</string>
+		<string>output</string>
+		<string>phenomenon</string>
+		<string>photon</string>
+		<string>photonvol</string>
+		<string>property</string>
+		<string>registry</string>
+		<string>render</string>
+		<string>root</string>
+		<string>scanline</string>
+		<string>set</string>
+		<string>shadow</string>
+		<string>shortname</string>
+		<string>softmax</string>
+		<string>softmin</string>
+		<string>spdl</string>
+		<string>state</string>
+		<string>system</string>
+		<string>texture</string>
+		<string>touch</string>
+		<string>trace</string>
+		<string>transform</string>
+		<string>true</string>
+		<string>value</string>
+		<string>verbose</string>
+		<string>version</string>
+		<string>volume</string>
+		<string>options</string>
+		<string>instgroup</string>
+		<string>assembly</string>
+		<string>contrast</string>
+		<string>time</string>
+		<string>samples</string>
+		<string>collect</string>
+		<string>shading</string>
+		<string>motion</string>
+		<string>filter</string>
+		<string>box</string>
+		<string>triangle</string>
+		<string>gauss</string>
+		<string>mitchell</string>
+		<string>lanczos</string>
+		<string>clip</string>
+		<string>jitter</string>
+		<string>quality</string>
+		<string>error</string>
+		<string>cutoff</string>
+		<string>progressive</string>
+		<string>subsampling</string>
+		<string>size</string>
+		<string>threshold</string>
+		<string>occlusion</string>
+		<string>cache</string>
+		<string>points</string>
+		<string>rays</string>
+		<string>frame</string>
+		<string>exclude</string>
+		<string>approximate</string>
+		<string>view</string>
+		<string>tree</string>
+		<string>grid</string>
+		<string>fine</string>
+		<string>regular</string>
+		<string>parametric</string>
+		<string>length</string>
+		<string>distance</string>
+		<string>angle</string>
+		<string>spatial</string>
+		<string>curvature</string>
+		<string>displace</string>
+		<string>shutter</string>
+		<string>steps</string>
+		<string>rast</string>
+		<string>factor</string>
+		<string>geom</string>
+		<string>depth</string>
+		<string>transparency</string>
+		<string>shadow</string>
+		<string>detail</string>
+		<string>shadowmap</string>
+		<string>only</string>
+		<string>rebuild</string>
+		<string>merge</string>
+		<string>bias</string>
+		<string>pixels</string>
+		<string>samples</string>
+		<string>acceleration</string>
+		<string>bsp</string>
+		<string>bsp2</string>
+		<string>size</string>
+		<string>presample</string>
+		<string>autovolume</string>
+		<string>photon</string>
+		<string>pass</string>
+		<string>differentials</string>
+		<string>caustic</string>
+		<string>accuracy</string>
+		<string>cone</string>
+		<string>scale</string>
+		<string>file</string>
+		<string>photonmap</string>
+		<string>globillum</string>
+		<string>photonvol</string>
+		<string>finalgather</string>
+		<string>fastlookup</string>
+		<string>points</string>
+		<string>view</string>
+		<string>falloff</string>
+		<string>tolerance</string>
+		<string>freeze</string>
+		<string>presample</string>
+		<string>density</string>
+		<string>secondary</string>
+		<string>passes</string>
+		<string>ambient</string>
+		<string>occlusion</string>
+		<string>gpu</string>
+		<string>framebuffer</string>
+		<string>importon</string>
+		<string>traverse</string>
+		<string>irradiance</string>
+		<string>particles</string>
+		<string>indirect</string>
+		<string>interpolate</string>
+		<string>interppoints</string>
+		<string>env</string>
+		<string>lighting</string>
+		<string>automatic</string>
+		<string>split</string>
+		<string>precomp</string>
+		<string>variance</string>
+		<string>iray</string>
+		<string>devices</string>
+		<string>path</string>
+		<string>threads</string>
+		<string>colorclip</string>
+		<string>rgb</string>
+		<string>alpha</string>
+		<string>raw</string>
+		<string>desaturate</string>
+		<string>premultiply</string>
+		<string>dither</string>
+		<string>gamma</string>
+		<string>buffer</string>
+		<string>useopacity</string>
+		<string>space</string>
+		<string>diagnostic</string>
+		<string>irradiance</string>
+		<string>scanline</string>
+		<string>shadow</string>
+		<string>sort</string>
+		<string>segments</string>
+		<string>face</string>
+		<string>front</string>
+		<string>back</string>
+		<string>both</string>
+		<string>object</string>
+		<string>space</string>
+		<string>camera</string>
+		<string>volume</string>
+		<string>phenomenon</string>
+		<string>version</string>
+		<string>shader</string>
+		<string>material</string>
+		<string>light</string>
+		<string>instance</string>
+		<string>end material</string>
+		<string>end light</string>
+		<string>end instance</string>
+		<string>root material</string>
+		<string>geometry</string>
+		<string>volume</string>
+		<string>priority</string>
+		<string>contour store</string>
+		<string>contour contrast</string>
+		<string>contrast</string>
+		<string>store</string>
+		<string>lens</string>
+		<string>material</string>
+		<string>light</string>
+		<string>shadow</string>
+		<string>environment</string>
+		<string>volume</string>
+		<string>texture</string>
+		<string>photon</string>
+		<string>geometry</string>
+		<string>displace</string>
+		<string>lightmap</string>
+		<string>emitter</string>
+		<string>state</string>
+		<string>task</string>
+		<string>inheritance</string>
+		<string>traversal</string>
+		<string>luminance</string>
+		<string>weight</string>
+		<string>ntsc</string>
+		<string>colorprofile</string>
+		<string>datatype</string>
+		<string>filtering</string>
+		<string>filename</string>
+		<string>filetype</string>
+		<string>compression</string>
+		<string>quality</string>
+		<string>dod</string>
+		<string>dpi</string>
+		<string>field</string>
+		<string>premultiplied</string>
+		<string>primary</string>
+		<string>tiled</string>
+		<string>user</string>
+		<string>useopacity</string>
+		<string>null</string>
+		<string>prep</string>
+		<string>read</string>
+		<string>write</string>
+		<string>focal</string>
+		<string>infinity</string>
+		<string>aperture</string>
+		<string>aspect</string>
+		<string>resolution</string>
+		<string>offset</string>
+		<string>window</string>
+		<string>clip</string>
+		<string>stereo</string>
+		<string>parallax</string>
+		<string>toein</string>
+		<string>offaxis</string>
+		<string>offset</string>
+		<string>local</string>
+		<string>writeable</string>
+		<string>opaque</string>
+		<string>bsdf</string>
+		<string>origin</string>
+		<string>direction</string>
+		<string>spread</string>
+		<string>visible</string>
+		<string>tag</string>
+		<string>energy</string>
+		<string>exponent</string>
+		<string>softness</string>
+		<string>color</string>
+		<string>rectangle</string>
+		<string>disc</string>
+		<string>sphere</string>
+		<string>cylinder</string>
+		<string>user</string>
+		<string>object</string>
+		<string>dim</string>
+		<string>ies</string>
+		<string>format</string>
+		<string>flags</string>
+		<string>hermite</string>
+		<string>group</string>
+		<string>reflection</string>
+		<string>refraction</string>
+		<string>transparency</string>
+		<string>force</string>
+		<string>select</string>
+		<string>tagged</string>
+		<string>basis</string>
+		<string>rational</string>
+		<string>taylor</string>
+		<string>bezier</string>
+		<string>cardinal</string>
+		<string>bspline</string>
+		<string>matrix</string>
+		<string>surface</string>
+		<string>curve</string>
+		<string>special</string>
+		<string>trim</string>
+		<string>hole</string>
+		<string>connect</string>
+		<string>hair</string>
+		<string>vertex</string>
+		<string>radius</string>
+		<string>samplelock</string>
+		<string>adskTraversal</string>
+		<string>incremental</string>
+		<string>spheres</string>
+		<string>tubes</string>
+		<string>radius0</string>
+		<string>radius1</string>
+		<string>level</string>
+		<string>corner</string>
+		<string>conic</string>
+		<string>cusp</string>
+		<string>dart</string>
+		<string>smooth</string>
+		<string>subdivision</string>
+		<string>crease</string>
+		<string>child</string>
+		<string>ccmesh</string>
+		<string>polygon</string>
+		<string>delaunay</string>
+		<string>sharp</string>
+		<string>grading</string>
+		<string>any</string>
+		<string>offscreen</string>
+		<string>nosmoothing</string>
+		<string>override</string>
+		<string>v</string>
+		<string>n</string>
+		<string>d</string>
+		<string>d2</string>
+		<string>b</string>
+		<string>t</string>
+		<string>m</string>
+		<string>u</string>
+		<string>p</string>
+		<string>c</string>
+		<string>cp</string>
+		<string>trilist</string>
+		<string>vertex</string>
+		<string>triangle</string>
+		<string>scalar</string>
+		<string>vector</string>
+		<string>boolean</string>
+		<string>color</string>
+		<string>shader</string>
+		<string>integer</string>
+		<string>string</string>
+		<string>struct</string>
+		<string>transform</string>
+		<string>spectrum</string>
+		<string>light</string>
+		<string>map</string>
+		<string>data</string>
+		<string>lightprofile</string>
+		<string>geometry</string>
+		<string>material</string>
+		<string>array</string>
+		<string>color texture</string>
+		<string>scalar texture</string>
+		<string>vector texture</string>
+		<string>global</string>
+	</array>
+		
+	<key>Language Features</key>
+	<dict>
+		<key>Identifier and Keyword Characters</key>
+		<string>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz$</string>		
+
+		<key>Open Strings 1</key>
+		<string>&quot;</string>
+		<key>Close Strings 1</key>
+		<string>&quot;</string>
+		<key>End-of-line Ends Strings 1</key>
+		<true/>
+		<key>Escape Char in Strings 1</key>
+		<string>\</string>
+		
+		<key>Open Strings 2</key>
+		<string>&lt;</string>
+		<key>Close Strings 2</key>
+		<string>&gt;</string>
+		<key>End-of-line Ends Strings 2</key>
+		<true/>
+		<key>Escape Char in Strings 2</key>
+		<string></string>
+	
+		<key>Open Line Comments</key> <string>;</string>
+		<key>PreferLineCommentsWhenCommenting</key>
+		<true/>
+		
+		<key>Comment Pattern</key> 
+		<string><![CDATA[
+		(?x: 
+			(\#++[^:].*$)|(`++[^:].*$)
+		)
+		]]></string>
+		
+		<key>String Pattern</key> 
+		<string><![CDATA[ 
+		(?x: 
+			("(\\"|[^"\r]|\\\r)*") | (?# Double-quote) 
+			(?s: 
+				<<-?(?P<delim>\w+) (?# Here-document)
+				.*?
+				(?P=delim)
+			)
+		)
+		]]></string>
+		
+		<key>Skip Pattern</key> 
+		<string><![CDATA[ 
+		(?x: 
+		(?P>comment) |
+		(?P>string)
+		)]]></string>
+	
+  </dict>
+
+</dict>
+</plist>
