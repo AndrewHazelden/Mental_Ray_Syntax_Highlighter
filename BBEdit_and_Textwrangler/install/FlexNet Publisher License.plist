@@ -75,52 +75,89 @@
 
 	<key>BBLMKeywordList</key>
 	<array>
-    <string>SERVER</string>
-		<string>VENDOR</string>
-		<string>USE_SERVER</string>
-		<string>INCREMENT</string>
-		<string>DUP_GROUP</string>
-		<string>ISSUER</string>
-		<string>ISSUED</string>
+		<string>ANY</string>
+		<string>asset_info</string>
+		<string>AUTH</string>
+		<string>BORROW_LOWWATER</string>
 		<string>BORROW</string>
-		<string>NOTICE</string>
-		<string>SN</string>
-		<string>ONE_TS_OK</string>
-		<string>SIGN</string>
-		
-		<string>TS_OK</string>
-		<string>FEATURE</string>
-		<string>PRIMARY_IS_MASTER</string>
-		<string>SERVER_TIMEOUT</string>
-		<string>PORT</string>
+		<string>COMPONENTS</string>
+		<string>COMPOSITE</string>
 		<string>DAEMON</string>
+		<string>DEBUGLOG</string>
+		<string>DEMO</string>
+		<string>DENIED</string>
+		<string>DISPLAY</string>
+		<string>dist_info</string>
+		<string>DUP_GROUP</string>
+		<string>exact</string>
+		<string>EXCLUDE_BORROW</string>
+		<string>EXCLUDE_ENTITLEMENT</string>
+		<string>EXCLUDE</string>
+		<string>EXCLUDEALL</string>
+		<string>FEATURE</string>
+		<string>FLEXID</string>
 		<string>FLOAT_OK</string>
+		<string>FQDN_MATCHING</string>
+		<string>GROUP</string>
+		<string>GROUPCASEINSENSITIVE</string>
+		<string>HEARTBEAT_INTERVAL</string>
 		<string>HOST_BASED</string>
+		<string>HOST_GROUP</string>
 		<string>HOSTID</string>
+		<string>HOSTNAME</string>
+		<string>ID</string>
+		<string>IN</string>
+		<string>INCLUDE_BORROW</string>
+		<string>INCLUDE_ENTITLEMENT</string>
+		<string>INCLUDE</string>
+		<string>INCLUDEALL</string>
+		<string>INCREMENT</string>
+		<string>INTERNET</string>
+		<string>ISSUED</string>
+		<string>ISSUER</string>
+		<string>lenient</string>
+		<string>LINGER</string>
+		<string>MAX_BORROW_HOURS</string>
+		<string>MAX_OVERDRAFT</string>
+		<string>MAX</string>
+		<string>NOLOG</string>
+		<string>NOTICE</string>
+		<string>OFF</string>
+		<string>ON</string>
+		<string>ONE_TS_OK</string>
+		<string>OPTIONS</string>
+		<string>OUT</string>
+		<string>OVERDRAFT</string>
+		<string>PACKAGE</string>
+		<string>permanent</string>
 		<string>PLATFORM</string>
 		<string>PLATFORMS</string>
-		<string>LINGER</string>
-		<string>OVERDRAFT</string>
+		<string>PORT</string>
+		<string>PRIMARY_IS_MASTER</string>
+		<string>PROJECT</string>
+		<string>QUEUED</string>
+		<string>REPORTLOG</string>
+		<string>RESERVE</string>
+		<string>SERVER_TIMEOUT</string>
+		<string>SERVER</string>
+		<string>SIGN</string>
+		<string>SN</string>
+		<string>sort</string>
 		<string>START</string>
 		<string>SUITE_DUP_GROUP</string>
 		<string>SUPERSEDE</string>
-		<string>USER_BASED</string>
-		<string>VENDOR_STRING</string>
-		
-		<string>asset_info</string>
-		<string>dist_info</string>
-		<string>sort</string>
-		<string>user_info</string>
-		<string>vendor_info</string>
-		
-		<string>INTERNET</string>
-		<string>COMPONENTS</string>
-		<string>OPTIONS</string>
-		<string>UPGRADE</string>
-		
-		<string>permanent</string>
+		<string>TIMEOUT</string>
+		<string>TIMEOUTALL</string>
+		<string>TS_OK</string>
 		<string>uncounted</string>
-		<string>ANY</string>
+		<string>UPGRADE</string>
+		<string>USE_SERVER</string>
+		<string>USER_BASED</string>
+		<string>user_info</string>
+		<string>USER</string>
+		<string>vendor_info</string>
+		<string>VENDOR_STRING</string>
+		<string>VENDOR</string>
 	</array>
 		
 	<key>Language Features</key>
