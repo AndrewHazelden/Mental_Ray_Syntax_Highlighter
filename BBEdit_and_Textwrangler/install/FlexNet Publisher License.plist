@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+
+<!-- 
+
+  FlexNet Publisher License Codeless Language Module for BBEdit and TextWrangler
+  Version 1.0 - December 8, 2016
+
+  Created by Andrew Hazelden
+  andrew@andrewhazelden.com
+  http://www.andrewhazelden.com
+  
+  Released under a Creative Commons Attribution-ShareAlike License:
+	<http://creativecommons.org/licenses/by-sa/2.0/>
+
+  To install, copy here:
+    
+      ~/Library/Application Support/BBEdit/Language Modules/
+
+  or here:
+
+    ~/Library/Application Support/TextWrangler/Language Modules/
+
+  and relaunch BBEdit or TextWrangler.
+
+	The BBEedit Codelesss Language Module syntax is defined here:
+	http://www.barebones.com/support/develop/clm.html
+-->
+
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+
+	<key>BBLMColorsSyntax</key>
+	<true/>
+
+	<key>Copyright</key>
+	<string>Copyright © 2016, Andrew Hazelden</string>
+	
+	<key>Author</key>
+	<string>Andrew Hazelden</string>
+	
+	<key>Version</key>
+	<string>1.0</string>
+
+	<key>BBLMIsCaseSensitive</key>
+	<false/>
+
+	<key>BBLMLanguageCode</key>
+	<string>LIC</string>
+
+	<key>BBLMLanguageDisplayName</key>
+	<string>FlexNet Publisher License</string>
+
+	<key>BBLMScansFunctions</key>
+	<false/>
+  
+	<key>BBLMSuffixMap</key> 
+	<array> 
+	<dict> 
+	  <key>BBLMLanguageSuffix</key> 
+	  <string>.lic</string>
+	</dict>
+	</array> 
+ 
+	<key>BBLMPreferredFilenameExtension</key>
+	<string>lic</string>
+
+	<key>BBLMSupportsTextCompletion</key>
+	<true/>
+
+	<key>BBLMCommentLineDefault</key>
+	<string>#</string>
+
+	<key>BBLMKeywordList</key>
+	<array>
+    <string>SERVER</string>
+		<string>VENDOR</string>
+		<string>USE_SERVER</string>
+		<string>INCREMENT</string>
+		<string>DUP_GROUP</string>
+		<string>ISSUER</string>
+		<string>ISSUED</string>
+		<string>BORROW</string>
+		<string>NOTICE</string>
+		<string>SN</string>
+		<string>ONE_TS_OK</string>
+		<string>SIGN</string>
+		
+		<string>TS_OK</string>
+		<string>FEATURE</string>
+		<string>PRIMARY_IS_MASTER</string>
+		<string>SERVER_TIMEOUT</string>
+		<string>PORT</string>
+		<string>DAEMON</string>
+		<string>FLOAT_OK</string>
+		<string>HOST_BASED</string>
+		<string>HOSTID</string>
+		<string>PLATFORM</string>
+		<string>PLATFORMS</string>
+		<string>LINGER</string>
+		<string>OVERDRAFT</string>
+		<string>START</string>
+		<string>SUITE_DUP_GROUP</string>
+		<string>SUPERSEDE</string>
+		<string>USER_BASED</string>
+		<string>VENDOR_STRING</string>
+		
+		<string>asset_info</string>
+		<string>dist_info</string>
+		<string>sort</string>
+		<string>user_info</string>
+		<string>vendor_info</string>
+		
+		<string>INTERNET</string>
+		<string>COMPONENTS</string>
+		<string>OPTIONS</string>
+		<string>UPGRADE</string>
+		
+		<string>permanent</string>
+		<string>uncounted</string>
+		<string>ANY</string>
+	</array>
+		
+	<key>Language Features</key>
+		<dict>
+			<key>Identifier and Keyword Characters</key>
+			<string>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz</string>		
+
+			<key>Open Strings 1</key>
+			<string>&quot;</string>
+			<key>Close Strings 1</key>
+			<string>&quot;</string>
+			<key>End-of-line Ends Strings 1</key>
+			<true/>
+			<key>Escape Char in Strings 1</key>
+			<string>\</string>
+		
+			<key>Open Line Comments</key>
+			<string>#</string>
+			<key>PreferLineCommentsWhenCommenting</key>
+			<true/>
+		
+			<key>Comment Pattern</key> 
+			<string><![CDATA[
+			(?x: 
+				(\#++[^:].*$)|(`++[^:].*$)
+			)
+			]]></string>
+		
+			<key>String Pattern</key> 
+			<string><![CDATA[ 
+			(?x: 
+				("(\\"|[^"\r]|\\\r)*") | (?# Double-quote) 
+				(?s: 
+					<<-?(?P<delim>\w+) (?# Here-document)
+					.*?
+					(?P=delim)
+				)
+			)
+			]]></string>
+		
+			<key>Skip Pattern</key> 
+			<string><![CDATA[ 
+			(?x: 
+			(?P>comment) |
+			(?P>string)
+			)]]></string>
+	
+		</dict>
+
+	</dict>
+</plist>

@@ -5,7 +5,7 @@
 <!-- 
 
   Mental Ray Codeless Language Module for BBEdit and TextWrangler
-  Version 1.0 - Sept 12, 2013
+  Version 1.1 - December 8, 2016
 
   Created by Andrew Hazelden
   andrew@andrewhazelden.com
@@ -23,7 +23,9 @@
     ~/Library/Application Support/TextWrangler/Language Modules/
 
   and relaunch BBEdit or TextWrangler.
-
+  
+	The BBEedit Codelesss Language Module syntax is defined here:
+	http://www.barebones.com/support/develop/clm.html
 -->
 
 <dict>
@@ -34,13 +36,13 @@
 	<true/>
 
 	<key>Copyright</key>
-	<string>Copyright © 2013, Andrew Hazelden</string>
+	<string>Copyright © 2013-2016, Andrew Hazelden</string>
 	
 	<key>Author</key>
 	<string>Andrew Hazelden</string>
 	
 	<key>Version</key>
-	<string>1.0</string>
+	<string>1.1</string>
 
 	<key>BBLMIsCaseSensitive</key>
 	<false/>
@@ -456,59 +458,59 @@
 	</array>
 		
 	<key>Language Features</key>
-	<dict>
-		<key>Identifier and Keyword Characters</key>
-		<string>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz$</string>		
-
-		<key>Open Strings 1</key>
-		<string>&quot;</string>
-		<key>Close Strings 1</key>
-		<string>&quot;</string>
-		<key>End-of-line Ends Strings 1</key>
-		<true/>
-		<key>Escape Char in Strings 1</key>
-		<string>\</string>
+		<dict>
+			<key>Identifier and Keyword Characters</key>
+			<string>A-Za-z0-9_\-\\</string>		
 		
-		<key>Open Strings 2</key>
-		<string>&lt;</string>
-		<key>Close Strings 2</key>
-		<string>&gt;</string>
-		<key>End-of-line Ends Strings 2</key>
-		<true/>
-		<key>Escape Char in Strings 2</key>
-		<string></string>
+			<key>Open Strings 1</key>
+			<string>&quot;</string>
+			<key>Close Strings 1</key>
+			<string>&quot;</string>
+			<key>End-of-line Ends Strings 1</key>
+			<true/>
+			<key>Escape Char in Strings 1</key>
+			<string>\</string>
+		
+			<key>Open Strings 2</key>
+			<string>&lt;</string>
+			<key>Close Strings 2</key>
+			<string>&gt;</string>
+			<key>End-of-line Ends Strings 2</key>
+			<true/>
+			<key>Escape Char in Strings 2</key>
+			<string></string>
 	
-		<key>Open Line Comments</key> <string>;</string>
-		<key>PreferLineCommentsWhenCommenting</key>
-		<true/>
+			<key>Open Line Comments</key>
+			<string>;</string>
+			<key>PreferLineCommentsWhenCommenting</key>
+			<true/>
 		
-		<key>Comment Pattern</key> 
-		<string><![CDATA[
-		(?x: 
-			(\#++[^:].*$)|(`++[^:].*$)
-		)
-		]]></string>
-		
-		<key>String Pattern</key> 
-		<string><![CDATA[ 
-		(?x: 
-			("(\\"|[^"\r]|\\\r)*") | (?# Double-quote) 
-			(?s: 
-				<<-?(?P<delim>\w+) (?# Here-document)
-				.*?
-				(?P=delim)
+			<key>Comment Pattern</key> 
+			<string><![CDATA[
+			(?x: 
+				(\#++[^:].*$)|(`++[^:].*$)
 			)
-		)
-		]]></string>
+			]]></string>
 		
-		<key>Skip Pattern</key> 
-		<string><![CDATA[ 
-		(?x: 
-		(?P>comment) |
-		(?P>string)
-		)]]></string>
+			<key>String Pattern</key> 
+			<string><![CDATA[ 
+			(?x: 
+				("(\\"|[^"\r]|\\\r)*") | (?# Double-quote) 
+				(?s: 
+					<<-?(?P<delim>\w+) (?# Here-document)
+					.*?
+					(?P=delim)
+				)
+			)
+			]]></string>
+		
+			<key>Skip Pattern</key> 
+			<string><![CDATA[ 
+			(?x: 
+			(?P>comment) |
+			(?P>string)
+			)]]></string>
 	
-  </dict>
-
-</dict>
+		</dict>
+	</dict>
 </plist>
