@@ -141,34 +141,6 @@
 			<string>#</string>
 			<key>PreferLineCommentsWhenCommenting</key>
 			<true/>
-		
-			<key>Comment Pattern</key> 
-			<string><![CDATA[
-			(?x: 
-				(\#++[^:].*$)|(`++[^:].*$)
-			)
-			]]></string>
-		
-			<key>String Pattern</key> 
-			<string><![CDATA[ 
-			(?x: 
-				("(\\"|[^"\r]|\\\r)*") | (?# Double-quote) 
-				(?s: 
-					<<-?(?P<delim>\w+) (?# Here-document)
-					.*?
-					(?P=delim)
-				)
-			)
-			]]></string>
-		
-			<key>Skip Pattern</key> 
-			<string><![CDATA[ 
-			(?x: 
-			(?P>comment) |
-			(?P>string)
-			)]]></string>
-	
 		</dict>
-
 	</dict>
 </plist>
