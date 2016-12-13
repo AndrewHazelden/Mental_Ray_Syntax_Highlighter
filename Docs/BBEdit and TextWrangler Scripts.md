@@ -427,23 +427,23 @@ Open up the macOS Activity Monitor program to inspect the running program and th
 
 #### <a name="open-tool-console"></a>MR Open Tool Console ####
 
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-console.png)
-
 Open up the macOS Console program to inspect error logs:
 
 - `/Applications/Utilities/Console.app`
 
-#### <a name="open-tool-env"></a>MR Open Tool ENV ####
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-console.png)
 
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-env.png)
+#### <a name="open-tool-env"></a>MR Open Tool ENV ####
 
 Display the active environment variable results using the "env" command.
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-env.png)
+
 #### <a name="open-tool-imfdisp-with-file-dialog"></a>MR Open Tool imf_disp With File Dialog ####
 
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-imfdisp-with-file-dialog.png)
-
 Open up the mental ray imf_disp image viewer program. 
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-imfdisp-with-file-dialog.png)
 
 You can edit the Applescript .scpt file to choose which version of imf_disp is opened:
 
@@ -505,7 +505,7 @@ Open up the NVPAC IrayLM program:
 
 - `/Applications/NVIDIA Corporation/Iray License Manager/IrayLM.app`
 
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-nvpac-iraylm.png)
 
 #### <a name="open-tool-terminal"></a>MR Open Tool Terminal ####
 
@@ -513,7 +513,7 @@ Open up the macOS Terminal program:
 
 - `/Applications/Utilities/Terminal.app`
 
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-terminal.png)
 
 ### <a name="open-webpages"></a>Open Webpages ###
 
@@ -527,6 +527,8 @@ Open up the @mentalray Twitter Webpage:
 
 [https://twitter.com/mentalray](https://twitter.com/mentalray)
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-mentalray-twitter.png)
+
 #### <a name="open-web-flexnet-publisher-lmadmin-ui"></a>MR Open Web FlexNet Publisher lmadmin UI ####
 
 Open up the FlexNet Publisher lmadmin webpage management UI:
@@ -535,11 +537,15 @@ Open up the FlexNet Publisher lmadmin webpage management UI:
 
 **Note:** If you are setting up lmadmin for the first time the default username is "admin" and the password is "admin". After you login to the lmadmin webpage you are guided through the process of customizing these login settings.
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-flexnet-publisher-lmadmin-ui.png)
+
 #### <a name="open-web-nvidia-arc-forum"></a>MR Open Web NVIDIA ARC Forum ####
 
 Open up the NVIDIA Advanced Rendering Forum:
 
 [https://forum.nvidia-arc.com/](https://forum.nvidia-arc.com/)
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-nvidia-arc-forum.png)
 
 #### <a name="open-web-nvidia-inside-mr-blog"></a>MR Open Web NVIDIA Inside mental ray Blog ####
 
@@ -547,11 +553,15 @@ Open up the Inside mental ray Blog Webpage:
 
 [https://blog.mentalray.com/](https://blog.mentalray.com/)
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-nvidia-inside-mr-blog.png)
+
 #### <a name="open-web-nvidia-mr-product-page"></a>MR Open Web NVIDIA mental ray Product Page ####
 
 Open up the mental ray product page where new licenses can be purchased and mental ray can be downloaded:
 
 [http://www.nvidia.com/object/nvidia-mental-ray-products.html](http://www.nvidia.com/object/nvidia-mental-ray-products.html)
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-nvidia-mr-product-page.png)
 
 #### <a name="open-web-nvidia-software-licensing-center"></a>MR Open Web NVIDIA Software Licensing Center ####
 
@@ -559,11 +569,15 @@ Open up the NVIDIA site which is used to administer your mental ray licenses:
 
 [https://nvidia.flexnetoperations.com/](https://nvidia.flexnetoperations.com/)
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-nvidia-software-licensing-center.png)
+
 #### <a name="open-web-nvidia-support"></a>MR Open Web NVIDIA Support ####
 
 Open up the NVIDIA Support Webpage:
 
 [https://nvidia.custhelp.com/app/answers/list](https://nvidia.custhelp.com/app/answers/list)
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-nvidia-support.png)
 
 ### <a name="render"></a>Render ###
 
@@ -585,6 +599,8 @@ This applescript has a `mrRenderHosts` variable that lets you list multiple ment
 
 `set mrRenderHosts to "Tamarack:14170 localhost:14170"`
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mr-standalone-render-with-file-dialog.png)
+
 #### <a name="mr-standalone-render-distributed"></a>MR Standalone Render Distributed ####
 
 Render a selected .mi file from your hard disk. 
@@ -595,17 +611,22 @@ This applescript has a `mrRenderHosts` variable that lets you list multiple ment
 
 `set mrRenderHosts to "Tamarack:14170 localhost:14170"`
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mr-standalone-render.png)
+
 #### <a name="mr-standalone-render-with-file-dialog"></a>MR Standalone Render With File Dialog ####
 
 Open a file dialog and then render a selected .mi file from your hard disk.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mr-standalone-render-with-file-dialog.png)
 
 #### <a name="mr-standalone-render"></a>MR Standalone Render ####
 
 Render a selected .mi file from your hard disk.
 
-**Note:** If you want to see the log output results from the mental ray standalone rendering you will have to edit the Applescript .scpt file's code block just below the section titled `-- Define the MR Standalone command line arguments`. 
+**Note:** If you want to disable the imf_display preview window and instead see the log output results from the mental ray standalone rendering you will have to edit the Applescript .scpt file's code just below the section titled `-- Define the MR Standalone command line arguments`. 
 
 You need to toggle the commented out line so this the following line is active:
 
 `-- set mrOptions to mrFile & " " & "-v 5 -render " & mrFrameRange & " > " & quoted form of POSIX path of mrErrorPath & " 2>&1"`
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mr-standalone-render.png)
