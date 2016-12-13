@@ -41,9 +41,7 @@ A suite of mental ray IDE (Integrated Development Environment) tools are provide
 	- [MR Open MR Standalone rayrc](#open-mr-standalone-rayrc)
 	- [MR Open MRFM maya.rayhosts](#open-mrfm-maya-rayhosts)
 	- [MR Open MRFM maya.rayrc](#open-mrfm-maya-rayrc)
-
 - [Open Tools](#open-tools)
-
 	- [MR Open Tool Activity Monitor](#open-tool-activity-monitor)
 	- [MR Open Tool Console](#open-tool-console)
 	- [MR Open Tool ENV](#open-tool-env)
