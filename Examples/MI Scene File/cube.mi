@@ -1,0 +1,841 @@
+# Mayatomr 2017.10
+# Maya 2017
+# File /Users/andrew/Documents/maya/projects/default/scenes/cube.ma
+
+
+min version "3.14"
+link "syncolorproxy.so"
+link "AdskShaderSDK.so"
+link "MayaShaders.so"
+link "mayabase.so"
+link "base.so"
+link "coreutil.so"
+link "lookdevKitMR.so"
+link "architectural.dylib"
+$include "AdskShaderSDK.mi"
+$include "MayaShaders.mi"
+$include "mayabase.mi"
+$include "coreutil.mi"
+$include "base.mi"
+$include "object_light_phen.mi"
+$include "lookdevKitMR.mi"
+$include <architectural.mi>
+
+data "maya_scene:colortransformdata"
+	"maya_color_transform_data" (
+		"magic" 1298233697,
+		"colorTransformData" "<ProcessListSet>
+<ProcessListEntry>
+<TransformId id=\"NativeViewingTpl_scenelinearRec709sRGBsRGBgamma_FORWARD\"/>
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<ProcessList version=\"1.3\" id=\"351a70dd-2a44-4903-83be-9d9bac585356\" name=\"scene-linear Rec 709/sRGB\">
+   <Description>scene-linear Rec 709/sRGB primaries to ACES primaries</Description>
+   <Description>Apply gamma (in Rec 709 primaries) to scene-linear values -- no tone-mapping.</Description>
+   <InputDescriptor>scene-linear Rec-709/sRGB RGB</InputDescriptor>
+   <OutputDescriptor>gamma-encoded RGB (Rec 709 primaries)</OutputDescriptor>
+   <Info>
+      <Release>2017.0.68</Release>
+      <Category>
+         <Hierarchy>Scene-linear</Hierarchy>
+         <Tags>
+            <SceneLinearWorkingSpace></SceneLinearWorkingSpace>
+            <Input></Input>
+            <Maya></Maya>
+            <Flame></Flame>
+         </Tags>
+      </Category>
+      <OutputSpace>
+         <ImageState>scene</ImageState>
+         <ShortName>ACES</ShortName>
+         <ID>1</ID>
+      </OutputSpace>
+      <InputSpace>
+         <ImageState>scene</ImageState>
+         <ShortName>scene-linear Rec 709/sRGB</ShortName>
+         <ID>3bd912cf-1d55-3335-bff9-af283bcf2042</ID>
+      </InputSpace>
+      <Copyright>Copyright 2016 Autodesk, Inc.  All rights reserved.</Copyright>
+   </Info>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Array dim=\"3 3 3\">
+     0.43957567      0.38391259      0.17651172
+    0.089600384      0.81471413      0.09568546
+    0.017415483      0.10873435      0.87385017
+      </Array>
+   </Matrix>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Description>ACES to Rec 709 matrix</Description>
+      <Array dim=\"3 3 3\">
+      2.5219347      -1.1370239     -0.38491082
+    -0.27547944       1.3698289    -0.094349548
+    -0.01598287     -0.14778924       1.1637721
+      </Array>
+   </Matrix>
+   <ExposureContrast inBitDepth=\"16f\" outBitDepth=\"16f\" style=\"linear\">
+      <ECParams exposure=\"0\" contrast=\"1\" pivot=\"1\" />
+      <DynamicParameter param=\"EXPOSURE\" />
+      <DynamicParameter param=\"CONTRAST\" />
+   </ExposureContrast>
+   <Gamma inBitDepth=\"16f\" outBitDepth=\"12i\" style=\"moncurveRev\">
+      <GammaParams gamma=\"2.4\" offset=\"0.055\" />
+   </Gamma>
+</ProcessList>
+</ProcessListEntry>
+<ProcessListEntry>
+<TransformId id=\"NativeViewingTpl_scenelinearRec709sRGBsRGBgamma_REVERSE\"/>
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<ProcessList version=\"1.3\" id=\"e9bc68b6-32fc-4225-a9ad-ebd48ef0f469\" name=\"Inverse of: [scene-linear Rec 709/sRGB]\" inverseOf=\"351a70dd-2a44-4903-83be-9d9bac585356\">
+   <Description>Inverse of: [scene-linear Rec 709/sRGB primaries to ACES primaries]</Description>
+   <Description>Apply gamma (in Rec 709 primaries) to scene-linear values -- no tone-mapping.</Description>
+   <InputDescriptor>gamma-encoded RGB (Rec 709 primaries)</InputDescriptor>
+   <OutputDescriptor>scene-linear Rec-709/sRGB RGB</OutputDescriptor>
+   <Gamma inBitDepth=\"12i\" outBitDepth=\"16f\" style=\"moncurveFwd\">
+      <GammaParams gamma=\"2.4\" offset=\"0.055\" />
+   </Gamma>
+   <ExposureContrast inBitDepth=\"16f\" outBitDepth=\"16f\" style=\"linearRev\">
+      <ECParams exposure=\"0\" contrast=\"1\" pivot=\"1\" />
+      <DynamicParameter param=\"EXPOSURE\" />
+      <DynamicParameter param=\"CONTRAST\" />
+   </ExposureContrast>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Array dim=\"3 3 3\">
+     0.43957567      0.38391262      0.17651172
+    0.089600392      0.81471419     0.095685467
+    0.017415484      0.10873436      0.87385017
+      </Array>
+   </Matrix>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Array dim=\"3 3 3\">
+      2.5219347      -1.1370239     -0.38491082
+    -0.27547944       1.3698291    -0.094349548
+   -0.015982868     -0.14778924       1.1637721
+      </Array>
+   </Matrix>
+</ProcessList>
+</ProcessListEntry>
+<ProcessListEntry>
+<TransformId id=\"NativeMixingTpl_scenelinearRec709sRGB_identity_RGB_FORWARD\"/>
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<ProcessList version=\"1.3\" id=\"d3f37c88-8a41-4311-afc6-28684c074def\" name=\"Stock Identity Transform\">
+   <Matrix id=\"5e1ab3df-c21a-44cb-9570-f704278685fb\" name=\"identity\" inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Array dim=\"3 3 3\">
+              1               0               0
+              0               1               0
+              0               0               1
+      </Array>
+   </Matrix>
+</ProcessList>
+</ProcessListEntry>
+<ProcessListEntry>
+<TransformId id=\"NativeMixingTpl_scenelinearRec709sRGB_identity_RGB_REVERSE\"/>
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<ProcessList version=\"1.3\" id=\"6fb587d0-66ea-4501-8266-6a76393c51ac\" name=\"Inverse of: [Stock Identity Transform]\" inverseOf=\"bf1c79be-db7d-4412-95bb-d5700636754e\">
+   <Description>Inverse of: []</Description>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Array dim=\"3 3 3\">
+              1               0               0
+              0               1               0
+              0               0               1
+      </Array>
+   </Matrix>
+</ProcessList>
+</ProcessListEntry>
+<ProcessListEntry>
+<TransformId id=\"NativeViewingTpl_scenelinearRec709sRGB22gamma_REVERSE\"/>
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<ProcessList version=\"1.3\" id=\"f68b9a6a-3c70-4a7c-bb56-369113373c16\" name=\"Inverse of: [scene-linear Rec 709/sRGB]\" inverseOf=\"351a70dd-2a44-4903-83be-9d9bac585356\">
+   <Description>Inverse of: [scene-linear Rec 709/sRGB primaries to ACES primaries]</Description>
+   <Description>Apply gamma (in Rec 709 primaries) to scene-linear values -- no tone-mapping.</Description>
+   <InputDescriptor>gamma-encoded RGB (Rec 709 primaries)</InputDescriptor>
+   <OutputDescriptor>scene-linear Rec-709/sRGB RGB</OutputDescriptor>
+   <Gamma inBitDepth=\"12i\" outBitDepth=\"16f\" style=\"basicFwd\">
+      <GammaParams gamma=\"2.2\" />
+   </Gamma>
+   <ExposureContrast inBitDepth=\"16f\" outBitDepth=\"16f\" style=\"linearRev\">
+      <ECParams exposure=\"0\" contrast=\"1\" pivot=\"1\" />
+      <DynamicParameter param=\"EXPOSURE\" />
+      <DynamicParameter param=\"CONTRAST\" />
+   </ExposureContrast>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Array dim=\"3 3 3\">
+     0.43957567      0.38391262      0.17651172
+    0.089600392      0.81471419     0.095685467
+    0.017415484      0.10873436      0.87385017
+      </Array>
+   </Matrix>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Array dim=\"3 3 3\">
+      2.5219347      -1.1370239     -0.38491082
+    -0.27547944       1.3698291    -0.094349548
+   -0.015982868     -0.14778924       1.1637721
+      </Array>
+   </Matrix>
+</ProcessList>
+</ProcessListEntry>
+<ProcessListEntry>
+<TransformId id=\"NativeViewingTpl_scenelinearRec709sRGB22gamma_FORWARD\"/>
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<ProcessList version=\"1.3\" id=\"351a70dd-2a44-4903-83be-9d9bac585356\" name=\"scene-linear Rec 709/sRGB\">
+   <Description>scene-linear Rec 709/sRGB primaries to ACES primaries</Description>
+   <Description>Apply gamma (in Rec 709 primaries) to scene-linear values -- no tone-mapping.</Description>
+   <InputDescriptor>scene-linear Rec-709/sRGB RGB</InputDescriptor>
+   <OutputDescriptor>gamma-encoded RGB (Rec 709 primaries)</OutputDescriptor>
+   <Info>
+      <Release>2017.0.68</Release>
+      <Category>
+         <Hierarchy>Scene-linear</Hierarchy>
+         <Tags>
+            <SceneLinearWorkingSpace></SceneLinearWorkingSpace>
+            <Input></Input>
+            <Maya></Maya>
+            <Flame></Flame>
+         </Tags>
+      </Category>
+      <OutputSpace>
+         <ImageState>scene</ImageState>
+         <ShortName>ACES</ShortName>
+         <ID>1</ID>
+      </OutputSpace>
+      <InputSpace>
+         <ImageState>scene</ImageState>
+         <ShortName>scene-linear Rec 709/sRGB</ShortName>
+         <ID>3bd912cf-1d55-3335-bff9-af283bcf2042</ID>
+      </InputSpace>
+      <Copyright>Copyright 2016 Autodesk, Inc.  All rights reserved.</Copyright>
+   </Info>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Array dim=\"3 3 3\">
+     0.43957567      0.38391259      0.17651172
+    0.089600384      0.81471413      0.09568546
+    0.017415483      0.10873435      0.87385017
+      </Array>
+   </Matrix>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Description>ACES to Rec 709 matrix</Description>
+      <Array dim=\"3 3 3\">
+      2.5219347      -1.1370239     -0.38491082
+    -0.27547944       1.3698289    -0.094349548
+    -0.01598287     -0.14778924       1.1637721
+      </Array>
+   </Matrix>
+   <ExposureContrast inBitDepth=\"16f\" outBitDepth=\"16f\" style=\"linear\">
+      <ECParams exposure=\"0\" contrast=\"1\" pivot=\"1\" />
+      <DynamicParameter param=\"EXPOSURE\" />
+      <DynamicParameter param=\"CONTRAST\" />
+   </ExposureContrast>
+   <Gamma inBitDepth=\"16f\" outBitDepth=\"12i\" style=\"basicRev\">
+      <GammaParams gamma=\"2.2\" />
+   </Gamma>
+</ProcessList>
+</ProcessListEntry>
+<ProcessListEntry>
+<TransformId id=\"NativeViewingTpl_scenelinearRec709sRGBRaw_REVERSE\"/>
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<ProcessList version=\"1.3\" id=\"6e937c47-6049-4b02-b9b8-570331c5d707\" name=\"Inverse of: [Raw]\" inverseOf=\"e4f758f9-0b9d-4a14-9008-1675b7c9328a\">
+   <Description>Inverse of: [Raw data (identity transform)]</Description>
+   <InputDescriptor>generic RGB</InputDescriptor>
+   <OutputDescriptor>generic RGB</OutputDescriptor>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Array dim=\"3 3 3\">
+              1               0               0
+              0               1               0
+              0               0               1
+      </Array>
+   </Matrix>
+   <ExposureContrast inBitDepth=\"16f\" outBitDepth=\"16f\" style=\"linearRev\">
+      <ECParams exposure=\"0\" contrast=\"1\" pivot=\"1\" />
+      <DynamicParameter param=\"EXPOSURE\" />
+      <DynamicParameter param=\"CONTRAST\" />
+   </ExposureContrast>
+</ProcessList>
+</ProcessListEntry>
+<ProcessListEntry>
+<TransformId id=\"NativeViewingTpl_scenelinearRec709sRGBRaw_FORWARD\"/>
+<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<ProcessList version=\"1.3\" id=\"e4f758f9-0b9d-4a14-9008-1675b7c9328a\" name=\"Raw\">
+   <Description>Raw data (identity transform)</Description>
+   <InputDescriptor>generic RGB</InputDescriptor>
+   <OutputDescriptor>generic RGB</OutputDescriptor>
+   <Info>
+      <Release>2017.0.68</Release>
+      <Category>
+         <Hierarchy></Hierarchy>
+         <Tags>
+            <Maya></Maya>
+            <Flame></Flame>
+            <View></View>
+            <Input></Input>
+            <View_PreProcess></View_PreProcess>
+         </Tags>
+      </Category>
+      <InputSpace>
+         <ShortName>Raw</ShortName>
+      </InputSpace>
+      <OutputSpace>
+         <ShortName>Raw</ShortName>
+      </OutputSpace>
+      <Copyright>Copyright 2016 Autodesk, Inc.  All rights reserved.</Copyright>
+   </Info>
+   <ExposureContrast inBitDepth=\"16f\" outBitDepth=\"16f\" style=\"linear\">
+      <ECParams exposure=\"0\" contrast=\"1\" pivot=\"1\" />
+      <DynamicParameter param=\"EXPOSURE\" />
+      <DynamicParameter param=\"CONTRAST\" />
+   </ExposureContrast>
+   <Matrix inBitDepth=\"16f\" outBitDepth=\"16f\">
+      <Array dim=\"3 3 3\">
+              1               0               0
+              0               1               0
+              0               0               1
+      </Array>
+   </Matrix>
+</ProcessList>
+</ProcessListEntry>
+</ProcessListSet>
+"
+		)
+
+options "miDefaultOptions"
+	object space
+	desaturate off
+	colorclip raw
+	premultiply on
+	dither on
+	gamma 1.
+	acceleration bsp2
+	task size 0
+	contrast 0.1 0.1 0.1 0.1
+	samples -2 0
+	filter gauss 3. 3.
+	jitter 0.
+	samplelock off
+	scanline off
+	trace on
+	trace depth 4 4 6
+	shadow segments
+	shadowmap detail
+	shadowmap rebuild on
+	"shadowmap pixel samples" 3
+	caustic off
+	globillum off
+	finalgather off
+	lens on
+	volume on
+	geometry on
+	displace on
+	displace presample on
+	output on
+	merge on
+	autovolume off
+	hair on
+	pass on
+	face both
+	traversal adskTraversal
+	"ambient occlusion" off
+	"ambient occlusion cache" off
+	"ambient occlusion cache density" 1.
+	"ambient occlusion cache points" 64
+	"ambient occlusion rays" 64
+	"contrast all buffers" off
+	"environment lighting caustic photons" 0
+	"environment lighting globillum photons" 0
+	"environment lighting mode" "off"
+	"environment lighting quality" 0.2
+	"environment lighting resolution" 512
+	"environment lighting scale" 1. 1. 1.
+	"environment lighting shader samples" 2.
+	"finalgather normal tolerance" 25.842
+	"geom displace motion factor" 1.
+	"gi" on
+	"gi clamp" -1.
+	"gi density" 4.
+	"gi diffuse depth" 2
+	"gi diffuse transmission depth" 2
+	"gi gpu" off
+	"gi gpu devices" 0
+	"gi rays" 81
+	"gi scale" 1.
+	"hair detail shadowmap" off
+	"light importance sampling" "on"
+	"light importance sampling precomputed" off
+	"light importance sampling quality" 1.
+	"light importance sampling resolution" 1.
+	"light importance sampling samples" 4
+	"light relative scale" 0.31831
+	"mdl meters per scene unit" 0.01
+	"mila clamp level" 1.
+	"mila clamp output" off
+	"mila diffuse detail" off
+	"mila diffuse detail distance" 10.
+	"mila diffuse quality" 1.
+	"mila glossy quality" 1.
+	"mila quality" 1.
+	"mila scatter quality" 1.
+	"mila scatter scale" 1.
+	"mila use max distance inside" on
+	"progressive" off
+	"progressive max time" 0
+	"progressive subsampling mode" "detail"
+	"progressive subsampling size" 4
+	"rast motion factor" 1.
+	"rast transparency depth" 250
+	"rast useopacity" on
+	"ray differentials" on
+	"samples error cutoff" 0. 0. 0. 0.
+	"samples max" 50.
+	"samples min" 1.
+	"samples per object" off
+	"samples quality" 0.25 0.25 0.25 0.25
+	"shadowmap pixel samples" 3
+	"shutter full close" 0.8
+	"shutter full open" 0.2
+	"shutter shape function" "none"
+	"trace camera clip" off
+	"trace camera motion vectors" on
+	"unified sampling" on
+	"maya allocate temp data on heap" off
+	"maya custom alpha" on
+	"maya custom depth" off
+	"maya custom label" off
+	"maya filter size compute" on
+	"maya filter size default" 0.0001
+	"maya reflection blur limit" 1
+	"maya refraction blur limit" 1
+	"maya render pass" 0
+	"maya shader glow" on
+	"maya shader glow buffer" "mayaGlow"
+	"maya shadow limit" 3
+	state [
+		"maya_state" (
+			"colorTransformData" "maya_scene:colortransformdata"
+			)
+		,
+		"adskFrameBufferState" (
+			)
+		]
+end options
+
+shader "sunShape:shader"
+	"adskMayaDirectionalLight" (
+		"color" 1. 1. 1.,
+		"intensity" 1.,
+		"useRayTraceShadows" on,
+		"shadowColor" 0. 0. 0.,
+		"shadowRays" 1,
+		"rayDepthLimit" 3,
+		"emitDiffuse" on,
+		"emitSpecular" on,
+		"useDepthMapShadows" off,
+		"useLightPosition" off,
+		"lightAngle" 0.
+		)
+
+shader "mia_physicalsun1"
+	"mia_physicalsun" (
+		"on" on,
+		"multiplier" 0.2,
+		"rgb_unit_conversion" 0.0001 0.0001 0.0001 1.,
+		"haze" 0.,
+		"redblueshift" 0.,
+		"saturation" 1.,
+		"horizon_height" 0.,
+		"shadow_softness" 1.,
+		"samples" 8,
+		"photon_bbox_min" 0. 0. 0.,
+		"photon_bbox_max" 0. 0. 0.,
+		"automatic_photon_energy" off,
+		"y_is_up" on,
+		"illuminance_mode" 0,
+		"direct_normal_illuminance" 0.
+		)
+
+light "sunShape"
+	= "mia_physicalsun1"
+	emitter = "mia_physicalsun1"
+	direction 0. 0. -1.
+end light
+
+instance "sunDirection" "sunShape"
+	tag 0
+	transform
+		0.908117 -0.0792749 0.411143 0.
+		-0.0220908 0.971475 0.236109 0.
+		-0.418133 -0.223498 0.880462 0.
+		0.0649747 -2.85735 -0.694457 1.
+end instance
+
+shader "shaderGlow1:perspShape"
+	"maya_shaderglow" (
+		"glowType" 1,
+		"haloType" 1,
+		"glowIntensity" 1.,
+		"glowColor" 1. 1. 1.,
+		"glowSpread" 0.05,
+		"glowEccentricity" 0.1,
+		"glowRadialNoise" 0.,
+		"glowStarLevel" 0.,
+		"glowOpacity" 0.,
+		"glowRingIntensity" 0.,
+		"glowRingFrequency" 0.5,
+		"glowFilterWidth" 1,
+		"haloIntensity" 1.,
+		"haloColor" 1. 1. 1.,
+		"haloSpread" 0.3,
+		"haloEccentricity" 0.1,
+		"haloRadialNoise" 0.,
+		"haloStarLevel" 0.,
+		"haloOpacity" 0.,
+		"haloRingIntensity" 0.,
+		"haloRingFrequency" 0.5,
+		"haloFilterWidth" 1,
+		"quality" 0.5,
+		"threshold" 0.,
+		"radialFrequency" 0.5,
+		"starPoints" 4.,
+		"rotation" 0.,
+		"autoExposure" on
+		)
+
+shader "volumeEngine1"
+	"adskMayaVolumeEngine" (
+		)
+
+shader "mia_physicalsky1"
+	"mia_physicalsky" (
+		"on" on,
+		"multiplier" 0.2,
+		"rgb_unit_conversion" 0.0001 0.0001 0.0001 1.,
+		"haze" 0.,
+		"redblueshift" 0.,
+		"saturation" 1.,
+		"horizon_height" 0.,
+		"horizon_blur" 0.1,
+		"ground_color" 0.2 0.2 0.2 1.,
+		"night_color" 0. 0. 0. 1.,
+		"sun_direction" 0. 0. 0.,
+		"sun" "sunDirection",
+		"sun_disk_intensity" 1.,
+		"sun_disk_scale" 4.,
+		"sun_glow_intensity" 1.,
+		"use_background" off,
+		"visibility_distance" 0.,
+		"y_is_up" on,
+		"flags" 0,
+		"sky_luminance_mode" 0,
+		"zenith_luminance" 0.,
+		"diffuse_horizontal_illuminance" 0.,
+		"a" 0.,
+		"b" 0.,
+		"c" 0.,
+		"d" 0.,
+		"e" 0.,
+		"physically_scaled_sun" off
+		)
+
+data "perspShape:fbdata"
+	"adskFrameBufferData" (
+		"magic" 1178760550,
+		"nonMaterialPassFrameBufferNames" [],
+		"frameBufferInfo" [],
+		"frameBufferTypeCounts" [
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0
+			]
+		)
+
+camera "perspShape"
+	data "perspShape:fbdata"
+	framebuffer "mayaGlow"
+		datatype "rgba_h"
+		filtering on
+		user on
+	output = "shaderGlow1:perspShape"
+	framebuffer "mayaColor"
+		datatype "rgba_h"
+		filtering on
+		primary on
+		filetype "png"
+		compression "zips"
+		filename "images/cube.0001.png"
+	output "maya_colormgt" (
+			"frameBuffer" "mayaColor",
+			"colorTransform" "NativeViewingTpl_scenelinearRec709sRGB22gamma_FORWARD"
+			)
+	resolution 800 333
+	aspect 2.4024
+	aperture 1.41732
+	frame 1 1.
+	clip 0.1 10000.
+	focal 1.37795
+	volume = "volumeEngine1"
+	environment = "mia_physicalsky1"
+end camera
+
+instance "persp" "perspShape"
+	transform
+		0.712026 -0.0391952 0.701058 1.38778e-17
+		3.55754e-19 0.998441 0.0558215 8.67362e-19
+		-0.702153 -0.0397464 0.710916 1.38778e-17
+		0.00416784 -0.755978 -9.25441 1.
+end instance
+
+shader "lambert1"
+	"adskMayaLambert" (
+		"color" 0.5 0.5 0.5,
+		"refractionLimit" 6,
+		"refractiveIndex" 1.,
+		"refractions" off,
+		"diffuse" 0.8,
+		"ambientColor" 0. 0. 0.,
+		"transparency" 0. 0. 0.,
+		"incandescence" 0. 0. 0.,
+		"translucence" 0.,
+		"translucenceFocus" 0.5,
+		"translucenceDepth" 0.5,
+		"opacityGain" 0.,
+		"glowIntensity" 0.,
+		"hideSource" off,
+		"surfaceThickness" 0.,
+		"shadowAttenuation" 0.5,
+		"transparencyDepth" 0.,
+		"lightAbsorbance" 0.,
+		"chromaticAberration" off,
+		"normalCamera" 1. 1. 1.,
+		"irradiance" 0. 0. 0.,
+		"irradianceColor" 1. 1. 1.,
+		"refractionBlur" 0.,
+		"refractionBlurLimit" 1,
+		"refractionRays" 1,
+		"scatterColor" 0.5 0.5 0.5,
+		"scatterRadius" 0.,
+		"scatterAccuracy" 97,
+		"scatterFalloff" 0,
+		"scatterLimit" 1,
+		"scatterCache" 0,
+		"matteOpacityMode" 2,
+		"matteOpacity" 1.,
+		"FrameBufferWriteOperation" 1,
+		"FrameBufferWriteFlags" 0,
+		"FrameBufferWriteFactor" 1.
+		)
+
+material "initialShadingGroup"
+		"adskMayaShadingEngine" (
+			"surfaceShader" = "lambert1.outColor",
+			"cutAwayOpacity" 0.,
+			"customShader" off
+			)
+end material
+
+data "pCubeShape1:vxdata"
+	"maya_vertexdata" (
+		"magic" 1298749048,
+		"uvs" [{
+				"name" "map1",
+				"type" 2,
+				"size" 3,
+				"offset" 0
+				}
+			]
+		)
+
+object "pCubeShape1"
+	visible on
+	shadow 3
+	transparency 3
+	reflection 3
+	refraction 3
+	finalgather on
+	finalgather 3
+	face both
+	tagged
+	data "pCubeShape1:vxdata"
+	trilist vertex 24 p n t 2 b 2 triangle 12
+		[
+		 -0.5 -0.5 0.5 0. 0. 1. 0.375 0. 1.33333 0. 2.66667 0. 4. 0.
+		 0.5 -0.5 0.5 0. 0. 1. 0.625 0. 2.66667 0. -1.33333 0. 4. 0.
+		 0.5 0.5 0.5 0. 0. 1. 0.625 0.25 2.4 0. -1.6 0. 2.4 -1.6
+		 -0.5 0.5 0.5 0. 0. 1. 0.375 0.25 3. 0. 1. 0. 3. -1.
+		 -0.5 0.5 0.5 0. 1. 0. 0.375 0.25 3. 0. 1. 0. 3. -1.
+		 0.5 0.5 0.5 0. 1. 0. 0.625 0.25 2.4 0. -1.6 0. 2.4 -1.6
+		 0.5 0.5 -0.5 0. 1. 0. 0.625 0.5 4. 0. 0. 0. -2.66667 -1.33333
+		 -0.5 0.5 -0.5 0. 1. 0. 0.375 0.5 4. 0. 0. 0. -1.33333 -2.66667
+		 -0.5 0.5 -0.5 0. 0. -1. 0.375 0.5 4. 0. 0. 0. -1.33333 -2.66667
+		 0.5 0.5 -0.5 0. 0. -1. 0.625 0.5 4. 0. 0. 0. -2.66667 -1.33333
+		 0.5 -0.5 -0.5 0. 0. -1. 0.625 0.75 4. 0. 0. 0. -1.33333 2.66667
+		 -0.5 -0.5 -0.5 0. 0. -1. 0.375 0.75 4. 0. 0. 0. -2.66667 1.33333
+		 -0.5 -0.5 -0.5 0. -1. 0. 0.375 0.75 4. 0. 0. 0. -2.66667 1.33333
+		 0.5 -0.5 -0.5 0. -1. 0. 0.625 0.75 4. 0. 0. 0. -1.33333 2.66667
+		 0.5 -0.5 0.5 0. -1. 0. 0.625 1. 4. 0. 0. 0. 0. 4.
+		 -0.5 -0.5 0.5 0. -1. 0. 0.375 1. 4. 0. 0. 0. 0. 4.
+		 0.5 -0.5 0.5 1. 0. 0. 0.625 0. 2.66667 0. -1.33333 0. 4. 0.
+		 0.5 -0.5 -0.5 1. 0. 0. 0.875 0. 0. 0. -4. 0. 4. 0.
+		 0.5 0.5 -0.5 1. 0. 0. 0.875 0.25 0. 0. -4. 0. 4. 0.
+		 0.5 0.5 0.5 1. 0. 0. 0.625 0.25 2.4 0. -1.6 0. 2.4 -1.6
+		 -0.5 -0.5 -0.5 -1. 0. 0. 0.125 0. 0. 0. 4. 0. 4. 0.
+		 -0.5 -0.5 0.5 -1. 0. 0. 0.375 0. 1.33333 0. 2.66667 0. 4. 0.
+		 -0.5 0.5 0.5 -1. 0. 0. 0.375 0.25 3. 0. 1. 0. 3. -1.
+		 -0.5 0.5 -0.5 -1. 0. 0. 0.125 0.25 0. 0. 4. 0. 4. 0.
+		]
+		[
+		 0 0 1 3
+		 0 3 1 2
+		 0 4 5 7
+		 0 7 5 6
+		 0 8 9 11
+		 0 11 9 10
+		 0 12 13 15
+		 0 15 13 14
+		 0 16 17 19
+		 0 19 17 18
+		 0 20 21 23
+		 0 23 21 22
+		]
+	end trilist
+end object
+
+instance "pCube1" "pCubeShape1"
+	light "exclusive" []
+	material ["initialShadingGroup"]
+	caustic on
+	caustic 3
+	globillum on
+	globillum 3
+	transform
+		0.5 0. 0. 0.
+		0. 0.5 0. 0.
+		0. 0. 0.5 0.
+		0. -0.5 0. 1.
+end instance
+
+shader "shadowCatcherUseBG"
+	"adskMayaUseBackground" (
+		"normalCamera" 1. 1. 1.,
+		"shadowMask" 1.,
+		"reflectionLimit" 0,
+		"specularColor" 0. 0. 0.,
+		"reflectivity" 0.,
+		"reflectionBlur" 0.,
+		"reflectionBlurLimit" 1,
+		"reflectionRays" 1,
+		"occlusionMask" 1.,
+		"matteOpacityMode" 2,
+		"matteOpacity" 1.,
+		"FrameBufferWriteOperation" 1,
+		"FrameBufferWriteFlags" 0,
+		"FrameBufferWriteFactor" 1.
+		)
+
+shader "shadowCatcherUseBG:shadow"
+	"adskMayaShadow" (
+		"transparency" = "shadowCatcherUseBG.outTransparency",
+		"shadowAttenuation" 0.,
+		"translucenceDepth" 0.
+		)
+
+material "shadowCatcherUseBGSG"
+		"adskMayaShadingEngine" (
+			"surfaceShader" = "shadowCatcherUseBG.outColor",
+			"cutAwayOpacity" 0.,
+			"customShader" off
+			)
+	shadow = "shadowCatcherUseBG:shadow"
+end material
+
+data "pPlaneShape1:vxdata"
+	"maya_vertexdata" (
+		"magic" 1298749048,
+		"uvs" [{
+				"name" "map1",
+				"type" 2,
+				"size" 3,
+				"offset" 0
+				}
+			]
+		)
+
+object "pPlaneShape1"
+	visible on
+	shadow 3
+	transparency 3
+	reflection 3
+	refraction 3
+	finalgather on
+	finalgather 3
+	face both
+	tagged
+	data "pPlaneShape1:vxdata"
+	trilist vertex 4 p n t 2 b 2 triangle 2
+		[
+		 -0.5 -1.11022e-16 0.5 0. 1. 2.22045e-16 0. 0. 1. 0. 0. 0. 2.22045e-16 -1.
+		 0.5 -1.11022e-16 0.5 0. 1. 2.22045e-16 1. 0. 1. 0. 0. 0. 2.22045e-16 -1.
+		 0.5 1.11022e-16 -0.5 0. 1. 2.22045e-16 1. 1. 1. 0. 0. 0. 2.22045e-16 -1.
+		 -0.5 1.11022e-16 -0.5 0. 1. 2.22045e-16 0. 1. 1. 0. 0. 0. 2.22045e-16 -1.
+		]
+		[
+		 0 0 1 3
+		 0 3 1 2
+		]
+	end trilist
+end object
+
+instance "pPlane1" "pPlaneShape1"
+	light "exclusive" []
+	material ["shadowCatcherUseBGSG"]
+	caustic on
+	caustic 3
+	globillum on
+	globillum 3
+	transform
+		0.0416667 0. 0. 0.
+		0. 1. 0. 0.
+		0. 0. 0.0416667 0.
+		0. 0. 0. 1.
+end instance
+
+instgroup ":MayaTranslatedWorld"
+	"pCube1"
+	"pPlane1"
+	"persp"
+	"sunDirection"
+end instgroup
+
+incremental shader "volumeEngine1"
+	"adskMayaVolumeEngine" (
+		"instances" []
+		)
+
+render ":MayaTranslatedWorld" "persp" "miDefaultOptions"
+
