@@ -1,13 +1,10 @@
-# Notepad++ Mental Ray Syntax Highlighter  #
-**Version 1** Released September 12, 2013  
-by Andrew Hazelden
+# Notepad++ Install #
 
 ![Sample .mi file](screenshots/mental_ray_syntax_highlighter.png)
 
-## Overview ##
-I would like to present a new Notepad++ syntax highlighting module that works with code from [Mental Ray and iRay](http://www.nvidia-arc.com/index.php). The new module makes it easier for a VFX Artist or Technical Director to edit a mental ray include file.
+## Requirements ##
 
-**Note:** The free program Notepad++ is required to use the syntax highlighter.
+This version of the syntax highlighting module works with [Notepad++](https://notepad-plus-plus.org/download/) on Windows.
 
 ## Download ##
 
@@ -26,7 +23,7 @@ You can download the latest version here:
 
 ![Open the Style Configurator](screenshots/2_style_configurator.png)
 
-In the Style Configurator window select the **Obsidian** theme and click the **Save and Close** button. 
+In the Style Configurator window select the **Obsidian** theme and click the **Save and Close** button.
 
 ![Choose the Obsidian Theme](screenshots/3_style_configurator_obsidian.png)
 
@@ -54,7 +51,7 @@ If the file was loaded correctly an "Import Successful" notice will appear.  Cli
 If you open a Mental Ray .mi include file at this point you will see formatted text. If you are working on an include file without the .mi extension you can select the language manually.
 
 Open the **Language** menu and select **Mental Ray**. This will turn on syntax highlighting and make it easier to develop complex include files.
- 
+
 ![Select the Mental Ray Language](screenshots/9_select_the_language.png)
 
 
@@ -65,13 +62,3 @@ Here is an example Mental Ray .mi file with Notepad++ based syntax highlighting 
 * * *
 
 I hope this tool improves your coding workflow as you develop new .mi files using the Notepad++ text editor.
-
-Cheers,  
-Andrew Hazelden
-
-eMail: [andrew@andrewhazelden.com](mailto:andrew@andrewhazelden.com)   
-Blog: [http://www.andrewhazelden.com](http://www.andrewhazelden.com)  
-Twitter: [@andrewhazelden](https://twitter.com/andrewhazelden)  
-Google+: [https://plus.google.com/u/0/105694670378845894137](https://plus.google.com/u/0/105694670378845894137)
-
-
