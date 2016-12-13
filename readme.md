@@ -7,7 +7,7 @@ by Andrew Hazelden
 
 ## Overview ##
 
-This collection [mental ray](http://www.nvidia.com/object/nvidia-mental-ray-products.html) syntax highlighting modules work with Notepad++, BBEdit, and TextWrangler. The modules make it easier for a VFX artist or technical director to edit a mental ray .mi include file and scene files.
+This collection of [mental ray](http://www.nvidia.com/object/nvidia-mental-ray-products.html) syntax highlighting modules work with Notepad++, BBEdit, and TextWrangler. The modules make it easier for a VFX artist or technical director to edit mental ray .mi include and scene files.
 
 *The mental ray syntax highlighters are distributed under a GPL v3 license.*
 
@@ -17,13 +17,13 @@ Check out the [Wiki index page for documentation](https://github.com/AndrewHazel
 
 ## Flexera FlexNet Publisher Syntax Highlighter ##
 
-A Flexera FlexNet Publisher lmadmin and IrayLM .lic license syntax highlighter module is also included. This makes it easier to view a generated license file and edit properties like the host name or other parameters when you are setting up a new floating license server.
+A Flexera FlexNet Publisher lmadmin and IrayLM .lic license syntax highlighter module is also included. This makes it easier to view a generated license file and edit properties like the server's hostname or other parameters when you are setting up a new floating license server.
 
 ![Sample FlexNet .lic file](flexnet-publisher-license-highlighter.png)
 
 ## mental ray IDE Tools ##
 
-In addition to the syntax highligher modules, a suite of mental ray IDE (Integrated Development Environment) tools are provided. These scripts work with BBEdit and TextWrangler. This collection of rendering TD centric scripts will boost your productivity when working with mental ray standalone, or mental ray for Maya.
+In addition to the syntax highligher modules, a suite of mental ray IDE (Integrated Development Environment) tools are provided. These scripts work with BBEdit and TextWrangler. Thie rendering TD centric scripts will boost your productivity when working with mental ray standalone, or mental ray for Maya.
 
 ![mental ray Scripts Menu](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mentalray-textwrangler-menus.gif)
 
