@@ -1,4 +1,5 @@
-# Mental Ray Syntax Highlighter #
+# mental ray Syntax Highlighter #
+
 **Version 1.1** Released December 12, 2016  
 by Andrew Hazelden
 
@@ -6,15 +7,25 @@ by Andrew Hazelden
 
 ## Overview ##
 
-I've just finished a set of Notepad++, BBEdit, and TextWrangler syntax highlighting modules for code from [Mental Ray and iRay](http://www.nvidia-arc.com/index.php). The new modules makes it easier for a VFX artist or technical director to edit a Mental Ray .mi include file.
+This collection [mental ray](http://www.nvidia.com/object/nvidia-mental-ray-products.html) syntax highlighting modules work with Notepad++, BBEdit, and TextWrangler. The modules make it easier for a VFX artist or technical director to edit a mental ray .mi include file and scene files.
 
-There is a new set of mental ray IDE (Integrated Development Environment) scripts available for TextWrangler and BBEdit that boost your productivity when working with and setting up mental ray standalone.
+A Flexera FlexNet Publisher lmadmin and IrayLM .lic license syntax highlighter module is also included. This makes it easier to view a generated license file and edit properties like the host name or other parameters when you are setting up a new floating license server.
 
-![Mental Ray Scripts](screenshots/mentalray-textwrangler-menus.gif)
+*The mental ray syntax highlighters are distributed under a GPL v3 license.*
 
-* * *
+## Wiki Documentation Quick Links ##
 
-I hope this tool improves your coding workflow as you develop new .mi files using a plain text editor.
+Check out the [Wiki index page for documentation](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki) on the syntax highlighting toolset.
+
+## mental ray IDE Tools ##
+
+The mental ray IDE (Integrated Development Environment) centric scripts that work with BBEdit, and TextWrangler will boost your productivity when working with mental ray standalone.
+
+![mental ray Scripts Menu](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mentalray-textwrangler-menus.gif)
+
+## Notes ##
+
+I hope this toolset improves your coding workflow as you develop new .mi files using a plain text editor.
 
 Cheers,  
 Andrew Hazelden
