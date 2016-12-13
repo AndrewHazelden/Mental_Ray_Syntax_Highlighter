@@ -100,37 +100,55 @@ The documentation menu has links to all of the mental ray for Maya and mental ra
 
 Open up the mental ray core HTML documentation.
 
+![MR HTML](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-mr-html.png)
+
 #### <a name="open-documentation-mr-quick-license-html"></a>MR Open Documentation MR Quick License HTML ####
 
 Open up the mental ray license HTML documentation.
+
+![MR Quick License HTML](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-mr-quick-license-html.png)
 
 #### <a name="open-documentation-mr-quick-license-pdf"></a>MR Open Documentation MR Quick License PDF ####
 
 Open up the mental ray license PDF documentation.
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-mr-quick-license-pdf.png)
+
 #### <a name="open-documentation-mrfm-html"></a>MR Open Documentation MRFM HTML ####
 
 Open up the mental ray for Maya plugin HTML documentation.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-mrfm-html.png)
 
 #### <a name="open-documentation-mrfm-pdf"></a>MR Open Documentation MRFM PDF ####
 
 Open up the mental ray for Maya plugin PDF documentation.
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-mrfm-pdf.png)
+
 #### <a name="open-documentation-nvpac-iraylm"></a>MR Open Documentation NVPAC IrayLM ####
 
 Open up the NVPAC IrayLM.pdf
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-nvpac-iraylm.png)
 
 #### <a name="open-documentation-release-notes-mr-standalone"></a>MR Open Documentation Release Notes MR Standalone ####
 
 Open up the mental ray standalone mentalray_relnotes.html file
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-release-notes-mr-standalone.png)
+
 #### <a name="open-documentation-release-notes-mrfm"></a>MR Open Documentation Release Notes MRFM ####
 
 Open up the mental ray for Maya mentalray_relnotes.html file
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-release-notes-mrfm.png)
+
 #### <a name="mr-standalone-help"></a>MR Standalone Help ####
 
 Run mental ray standalone with the -help command line flag. The textual help details are then sent to a new text document.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mr-standalone-help.png)
 
 #### <a name="mr-standalone-version"></a>MR Standalone Version ####
 
@@ -163,21 +181,31 @@ The Open Files and Folders section makes it easy to open up the configuration fi
 
 Open up the  `~/.bash_profile` which is used to configure environment variables
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-dot-bash-profile.png)
+
 #### <a name="open-dot-profile"></a>MR Open `.profile` ####
 
 Open up the  `~/.profile` which is used to configure environment variables
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-dot-profile.png)
 
 #### <a name="open-folder-tmp"></a>MR Open Folder `$TMP` ####
 
 Open up the `/tmp/` folder.
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-tmp.png)
+
 #### <a name="open-folder-tmpdir"></a>MR Open Folder `$TMPDIR` ####
 
 Open up the macOS `/private/var/folders/` based temporary folder.
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-tmpdir.png)
+
 #### <a name="open-folder-mr-devkit"></a>MR Open Folder MR DevKit ####
 
 Open up the mental ray devkit folder. This is where a mental ray stores the .h and resources needed if you want to compile your own custom shaders.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-mr-devkit.png)
 
 You can edit the Applescript .scpt file to choose which version of the devkit folder is opened:
 
@@ -209,6 +237,8 @@ You can edit the Applescript .scpt file to choose which version of the devkit fo
 
 Open up the mental ray include folder. This is where a mental ray shader's .mi file is stored.
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-mr-include.png)
+
 You can edit the Applescript .scpt file to choose which version of the include folder is opened:
 
 **mental ray standalone for Maya 2017**
@@ -238,6 +268,8 @@ You can edit the Applescript .scpt file to choose which version of the include f
 #### <a name="open-folder-mr-shaders"></a>MR Open Folder MR Shaders ####
 
 Open up the mental ray shaders folder. This is where a mental ray shader .dylib file is stored.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-mr-shaders.png)
 
 You can edit the Applescript .scpt file to choose which version of the shaders folder is opened:
 
@@ -281,9 +313,13 @@ Linux lmadmin license path:
 
 - `/opt/FlexNetLicenseServerManager/licenses/nvidia/`
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-license-flexnet-publisher.png)
+
 #### <a name="open-license-nvpac-flexlmrc"></a>MR Open License NVPAC IrayLM .flexlmrc ####
 
 Open up the Iray license manager ~/.flexlmrc file.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-license-nvpac-flexlmrc.png)
 
 #### <a name="open-license-nvpac-iraylm"></a>MR Open License NVPAC IrayLM ####
 
@@ -301,17 +337,25 @@ Windows IRayLM license Path:
 
 `C:\ProgramData\NVIDIA Corporation\Iray License Manager\License Store\FLEXlm\`
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-license-nvpac-iraylm.png)
+
 #### <a name="open-logfile-flexnet-publisher-lmadmin"></a>MR Open Logfile FlexNet Publisher lmadmin ####
 
 Open up the folder of FlexNet Publisher lmadmin log files.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-logfile-flexnet-publisher-lmadmin.png)
 
 #### <a name="open-logfile-mayarenderlog"></a>MR Open Logfile `mayaRender.log` ####
 
 Open up the Autodesk Maya batch render created `mayaRender.log` file.
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-logfile-mayarenderlog.png)
+
 #### <a name="open-logfile-nvpac-iraylm"></a>MR Open Logfile NVPAC IrayLM ####
 
 Open up the folder of NVPAC IRayLM log files.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-logfile-nvpac-iraylm.png)
 
 #### <a name="open-logfile-raysat"></a>MR Open Logfile Raysat for Maya ####
 
@@ -325,9 +369,13 @@ Open up the Maya environment variable file `Maya.env`.
 
 Open up the mental ray standalone `rayrc` file.
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-mr-standalone-rayrc.png)
+
 #### <a name="open-mrfm-maya-rayhosts"></a>MR Open MRFM maya.rayhosts ####
 
 Open up the mental ray for Maya maya.rayhosts file.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-mrfm-maya-rayhosts.png)
 
 You can edit the Applescript .scpt file to choose which version of the rayhosts file is opened:
 
@@ -346,6 +394,8 @@ You can edit the Applescript .scpt file to choose which version of the rayhosts 
 #### <a name="open-mrfm-maya-rayrc"></a>MR Open MRFM maya.rayrc ####
 
 Open up the mental ray for Maya `maya.rayrc` file.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-mrfm-maya-rayrc.png)
 
 You can edit the Applescript .scpt file to choose which version of the rayrc file is opened:
 
@@ -371,9 +421,13 @@ The Open Tools section lets you access the common utilities that are needed when
 
 Open up the macOS Activity Monitor program to inspect the running program and the CPU load:
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+
 - `/Applications/Utilities/Activity Monitor.app`
 
 #### <a name="open-tool-console"></a>MR Open Tool Console ####
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
 
 Open up the macOS Console program to inspect error logs:
 
@@ -381,9 +435,13 @@ Open up the macOS Console program to inspect error logs:
 
 #### <a name="open-tool-env"></a>MR Open Tool ENV ####
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+
 Display the active environment variable results using the "env" command.
 
 #### <a name="open-tool-imfdisp-with-file-dialog"></a>MR Open Tool imf_disp With File Dialog ####
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
 
 Open up the mental ray imf_disp image viewer program. 
 
@@ -423,6 +481,8 @@ Domemaster3D for Maya can be downloaded from:
 
 **Note:** Please start Maya and have it running in the background before running this script.
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+
 #### <a name="open-tool-mr-standalone-collect-maya-libraries"></a>MR Open Tool MR Standalone Collect Maya Libraries ####
 
 Open run the mental ray satndalone "collect_maya_libraries.macosx.sh" script:
@@ -445,11 +505,15 @@ Open up the NVPAC IrayLM program:
 
 - `/Applications/NVIDIA Corporation/Iray License Manager/IrayLM.app`
 
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+
 #### <a name="open-tool-terminal"></a>MR Open Tool Terminal ####
 
 Open up the macOS Terminal program:
 
 - `/Applications/Utilities/Terminal.app`
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
 
 ### <a name="open-webpages"></a>Open Webpages ###
 
