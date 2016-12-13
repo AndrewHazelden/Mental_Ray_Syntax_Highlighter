@@ -1,5 +1,3 @@
-# BBEdit and TextWrangler Install #
-
 ![Sample .mi file](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/tw_mental_ray_syntax_highlighter.png)
 
 ## Requirements ##
@@ -25,13 +23,13 @@ You can download a copy from GitHub here:
 
 ![Download Notepad++](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/download_text_wrangler.png)
 
-**Step 2.**  Copy the "Mental Ray.plist" and  "FlexNet Publisher License.plist" files from the **install/Language Modules** folder to your Language Modules folder.
+**Step 2.**  Copy the `Mental Ray.plist` and `FlexNet Publisher License.plist` files from the `install/Language Modules` folder to your Language Modules folder.
 
-If you are using TextWrangler the module belongs in this folder:  
+If you are using TextWrangler the module belong in this folder:  
 
     ~/Library/Application Support/TextWrangler/Language Modules/
 
-If you are using BBEdit the module belongs in this folder:  
+If you are using BBEdit the module belong in this folder:  
 
     ~/Library/Application Support/BBEdit/Language Modules/
 
@@ -96,7 +94,7 @@ This is the view with the  [Midnight Blue Color Scheme](http://www.andrewhazelde
 
 ## Install the Apple Scripts ##
 
-**Step 4.**  Copy the "mental ray" scripts folder from either the **BBEdit_and_Textwrangler/BBEdit Scripts** or **BBEdit_and_Textwrangler/TextWrangler Scripts** folder to your Scripts folder.
+**Step 4.**  Copy the "mental ray" scripts folder from either the `BBEdit_and_Textwrangler/BBEdit Scripts` or `BBEdit_and_Textwrangler/TextWrangler Scripts` folder to your Scripts folder.
 
 If you are using TextWrangler the scripts belongs in this folder:  
 
