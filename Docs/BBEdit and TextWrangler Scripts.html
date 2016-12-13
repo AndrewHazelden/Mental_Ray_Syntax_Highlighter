@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BBEdit and TextWrangler Scripts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>BBEdit and TextWrangler Scripts</h1>
+<p>A suite of mental ray IDE (Integrated Development Environment) tools are provided with the mental ray syntax highlighters. These scripts work with BBEdit and TextWrangler. This collection of rendering TD centric scripts will boost your productivity when working with mental ray standalone, or mental ray for Maya.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mentalray-textwrangler-menus.gif" alt="mental ray Scripts Menu" /></p>
+<h2>Table of Contents</h2>
+<ul>
+<li>
+<a href="#convert">Convert</a>
+<ul>
+<li><a href="#convert-ascii-to-binary-with-file-dialog">MR Convert .mi ASCII to Binary With File Dialog</a></li>
+<li><a href="#convert-ascii-to-binary">MR Convert .mi ASCII to Binary</a></li>
+<li><a href="#convert-binary-to-ascii-with-file-dialog">MR Convert .mi Binary to ASCII With File Dialog</a></li>
+<li><a href="#convert-binary-to-ascii">MR Convert .mi Binary to ASCII</a></li>
+</ul>
+</li>
+<li>
+<a href="#open-documentation">Open Documentation</a>
+<ul>
+<li><a href="#open-documentation-mr-html">MR Open Documentation MR HTML</a></li>
+<li><a href="#open-documentation-mr-quick-license-html">MR Open Documentation MR Quick License HTML</a></li>
+<li><a href="#open-documentation-mr-quick-license-pdf">MR Open Documentation MR Quick License PDF</a></li>
+<li><a href="#open-documentation-mrfm-html">MR Open Documentation MRFM HTML</a></li>
+<li><a href="#open-documentation-mrfm-pdf">MR Open Documentation MRFM PDF</a></li>
+<li><a href="#open-documentation-nvpac-iraylm">MR Open Documentation NVPAC IrayLM</a></li>
+<li><a href="#open-documentation-release-notes-mr-standalone">MR Open Documentation Release Notes MR Standalone</a></li>
+<li><a href="#open-documentation-release-notes-mrfm">MR Open Documentation Release Notes MRFM</a></li>
+<li><a href="#mr-standalone-help">MR Standalone Help</a></li>
+<li><a href="#mr-standalone-version">MR Standalone Version</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#open-files-and-folders">Open Files and Folders</a></p>
+<ul>
+<li><a href="#open-dot-bash-profile">MR Open .bash_profile</a></li>
+<li><a href="#open-dot-profile">MR Open .profile</a></li>
+<li><a href="#open-folder-tmp">MR Open Folder $TMP</a></li>
+<li><a href="#open-folder-tmpdir">MR Open Folder $TMPDIR</a></li>
+<li><a href="#open-folder-mr-devkit">MR Open Folder MR DevKit</a></li>
+<li><a href="#open-folder-mr-include">MR Open Folder MR Include</a></li>
+<li><a href="#open-folder-mr-shaders">MR Open Folder MR Shaders</a></li>
+<li><a href="#open-license-flexnet-publisher">MR Open License FlexNet Publisher</a></li>
+<li><a href="#open-license-nvpac-flexlmrc">MR Open License NVPAC IrayLM .flexlmrc</a></li>
+<li><a href="#open-license-nvpac-iraylm">MR Open License NVPAC IrayLM</a></li>
+<li><a href="#open-logfile-flexnet-publisher-lmadmin">MR Open Logfile FlexNet Publisher lmadmin</a></li>
+<li><a href="#open-logfile-mayarenderlog">MR Open Logfile mayaRender.log</a></li>
+<li><a href="#open-logfile-nvpac-iraylm">MR Open Logfile NVPAC IrayLM</a></li>
+<li><a href="#open-logfile-raysat">MR Open Logfile Raysat for Maya</a></li>
+<li><a href="#open-maya-env">MR Open Maya.env</a></li>
+<li><a href="#open-mr-standalone-rayrc">MR Open MR Standalone rayrc</a></li>
+<li><a href="#open-mrfm-maya-rayhosts">MR Open MRFM maya.rayhosts</a></li>
+<li><a href="#open-mrfm-maya-rayrc">MR Open MRFM maya.rayrc</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#open-tools">Open Tools</a></p>
+<ul>
+<li><a href="#open-tool-activity-monitor">MR Open Tool Activity Monitor</a></li>
+<li><a href="#open-tool-console">MR Open Tool Console</a></li>
+<li><a href="#open-tool-env">MR Open Tool ENV</a></li>
+<li><a href="#open-tool-imfdisp-with-file-dialog">MR Open Tool imf_disp With File Dialog</a></li>
+<li><a href="#open-tool-maya-domemaster3d-dome-diagnostics">MR Open Tool Maya Domemaster3D Dome Diagnostics</a></li>
+<li><a href="#open-tool-mr-standalone-collect-maya-libraries">MR Open Tool MR Standalone Collect Maya Libraries</a></li>
+<li><a href="#open-tool-nvpac-iraylm">MR Open Tool NVPAC IrayLM</a></li>
+<li><a href="#open-tool-terminal">MR Open Tool Terminal</a></li>
+</ul>
+</li>
+<li>
+<a href="#open-webpages">Open Webpages</a>
+<ul>
+<li><a href="#open-web-mentalray-twitter">MR Open Web @mentalray Twitter</a></li>
+<li><a href="#open-web-flexnet-publisher-lmadmin-ui">MR Open Web FlexNet Publisher lmadmin UI</a></li>
+<li><a href="#open-web-nvidia-arc-forum">MR Open Web NVIDIA ARC Forum</a></li>
+<li><a href="#open-web-nvidia-inside-mr-blog">MR Open Web NVIDIA Inside mental ray Blog</a></li>
+<li><a href="#open-web-nvidia-mr-product-page">MR Open Web NVIDIA mental ray Product Page</a></li>
+<li><a href="#open-web-nvidia-software-licensing-center">MR Open Web NVIDIA Software Licensing Center</a></li>
+<li><a href="#open-web-nvidia-support">MR Open Web NVIDIA Support</a></li>
+</ul>
+</li>
+<li>
+<a href="#render">Render</a>
+<ul>
+<li><a href="#mr-standalone-render-distributed-with-file-dialog">MR Standalone Render Distributed With File Dialog</a></li>
+<li><a href="#mr-standalone-render-distributed">MR Standalone Render Distributed</a></li>
+<li><a href="#mr-standalone-render-with-file-dialog">MR Standalone Render With File Dialog</a></li>
+<li><a href="#mr-standalone-render">MR Standalone Render</a></li>
+</ul>
+</li>
+</ul>
+<h2>BBEdit / TextWrangler Script Docs</h2>
+<h3><a name="convert"></a>Convert</h3>
+<p>The convert menu is used to translate the format of your .mi mental ray scenes. A binary format .mi document is more compact on your hard disk, while an ASCII format scene file is stored in plain text which means it is easier to edit the file but it does result in a .mi document that has a larger file size.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/textwrangler-convert-menu.png" alt="Convert Menu" /></p>
+<h4><a name="convert-ascii-to-binary-with-file-dialog"></a>MR Convert .mi ASCII to Binary With File Dialog</h4>
+<p>Open a file dialog and then convert a selected .mi file into a compressed binary format .mi file.</p>
+<h4><a name="convert-ascii-to-binary"></a>MR Convert .mi ASCII to Binary</h4>
+<p>Take the currently open .mi file and convert it into a compressed binary format .mi file</p>
+<h4><a name="convert-binary-to-ascii-with-file-dialog"></a>MR Convert .mi Binary to ASCII With File Dialog</h4>
+<p>Open a file dialog and then convert a selected .mi file into an ASCII format .mi file</p>
+<h4><a name="convert-binary-to-ascii"></a>MR Convert .mi Binary to ASCII</h4>
+<p>Take the currently open .mi file and convert it into an ASCII format .mi file</p>
+<h3><a name="open-documentation"></a>Open Documentation</h3>
+<p>The documentation menu has links to all of the mental ray for Maya and mental ray standalone reference materials on your system. This is the place to go when you are looking for a note on a specific mental ray setting, details on how to set up mental ray licensing, or if you need to find out what an obscure command line render flag is for the ray program.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/textwrangler-open-documentation-menu.png" alt="Open Documentation Menu" /></p>
+<h4><a name="open-documentation-mr-html"></a>MR Open Documentation MR HTML</h4>
+<p>Open up the mental ray core HTML documentation.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-mr-html.png" alt="MR HTML" /></p>
+<h4><a name="open-documentation-mr-quick-license-html"></a>MR Open Documentation MR Quick License HTML</h4>
+<p>Open up the mental ray license HTML documentation.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-mr-quick-license-html.png" alt="MR Quick License HTML" /></p>
+<h4><a name="open-documentation-mr-quick-license-pdf"></a>MR Open Documentation MR Quick License PDF</h4>
+<p>Open up the mental ray license PDF documentation.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-mr-quick-license-pdf.png" alt="MR" /></p>
+<h4><a name="open-documentation-mrfm-html"></a>MR Open Documentation MRFM HTML</h4>
+<p>Open up the mental ray for Maya plugin HTML documentation.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-mrfm-html.png" alt="MR" /></p>
+<h4><a name="open-documentation-mrfm-pdf"></a>MR Open Documentation MRFM PDF</h4>
+<p>Open up the mental ray for Maya plugin PDF documentation.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-mrfm-pdf.png" alt="MR" /></p>
+<h4><a name="open-documentation-nvpac-iraylm"></a>MR Open Documentation NVPAC IrayLM</h4>
+<p>Open up the NVPAC IrayLM.pdf</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-nvpac-iraylm.png" alt="MR" /></p>
+<h4><a name="open-documentation-release-notes-mr-standalone"></a>MR Open Documentation Release Notes MR Standalone</h4>
+<p>Open up the mental ray standalone mentalray_relnotes.html file</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-release-notes-mr-standalone.png" alt="MR" /></p>
+<h4><a name="open-documentation-release-notes-mrfm"></a>MR Open Documentation Release Notes MRFM</h4>
+<p>Open up the mental ray for Maya mentalray_relnotes.html file</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-release-notes-mrfm.png" alt="MR" /></p>
+<h4><a name="mr-standalone-help"></a>MR Standalone Help</h4>
+<p>Run mental ray standalone with the -help command line flag. The textual help details are then sent to a new text document.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mr-standalone-help.png" alt="MR" /></p>
+<h4><a name="mr-standalone-version"></a>MR Standalone Version</h4>
+<p>List the current mental ray standalone version information. The textual help details are then sent to a new text document.</p>
+<p>The output from this script is a text document with mental ray details like:</p>
+<pre><code>    mental ray     version 3.14.3.31, 15 Nov 2016, revision 281811, code 00020
+    Q
+
+    Copyright 1986, 2016 NVIDIA Corporation. All rights reserved.
+
+    NVIDIA and the NVIDIA logo are registered trademarks of NVIDIA Corporation.
+    imatter, IndeX, Iray, MDL, mental images, mental ray, and RealityServer
+    are trademarks and/or registered trademarks of NVIDIA Corporation.
+
+    This product is manufactured under one or more of the following
+    patents: United States (US) No. 6,496,190, No. 6,529,193, No.
+    6,606,092; Australia (AU) No. 731,641, No. 744,983, No. 752,048,
+    No. 759,796; France (F) No. 099 2024; Germany (D) No. 6981 2947.4;
+    United Kingdom (UK) No. 099 2024; Patents Pending.
+</code></pre>
+
+<h3><a name="open-files-and-folders"></a>Open Files and Folders</h3>
+<p>The Open Files and Folders section makes it easy to open up the configuration files that are used to set up mental ray for Maya and mental ray standalone. You can also use this section to access the log files that are generated when new batch renderings are created, or during the process of configuring FlexNet Publisher or NVPAC IrayLM based licensing.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/textwrangler-open-files-and-folders-menu.png" alt="Open Files and Folders Menu" /></p>
+<h4><a name="open-dot-bash-profile"></a>MR Open <code>.bash_profile</code></h4>
+<p>Open up the  <code>~/.bash_profile</code> which is used to configure environment variables</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-dot-bash-profile.png" alt="MR" /></p>
+<h4><a name="open-dot-profile"></a>MR Open <code>.profile</code></h4>
+<p>Open up the  <code>~/.profile</code> which is used to configure environment variables</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-dot-profile.png" alt="MR" /></p>
+<h4><a name="open-folder-tmp"></a>MR Open Folder <code>$TMP</code></h4>
+<p>Open up the <code>/tmp/</code> folder.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-tmp.png" alt="MR" /></p>
+<h4><a name="open-folder-tmpdir"></a>MR Open Folder <code>$TMPDIR</code></h4>
+<p>Open up the macOS <code>/private/var/folders/</code> based temporary folder.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-tmpdir.png" alt="MR" /></p>
+<h4><a name="open-folder-mr-devkit"></a>MR Open Folder MR DevKit</h4>
+<p>Open up the mental ray devkit folder. This is where a mental ray stores the .h and resources needed if you want to compile your own custom shaders.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-mr-devkit.png" alt="MR" /></p>
+<p>You can edit the Applescript .scpt file to choose which version of the devkit folder is opened:</p>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2017/devkit/</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016.5/devkit/</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016/devkit/</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/devkit/</code></li>
+</ul>
+<p><strong>mental ray for Maya 2016.5</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016.5/devkit</code></li>
+</ul>
+<p><strong>mental ray for Maya 2016</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016/devkit</code></li>
+</ul>
+<h4><a name="open-folder-mr-include"></a>MR Open Folder MR Include</h4>
+<p>Open up the mental ray include folder. This is where a mental ray shader's .mi file is stored.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-mr-include.png" alt="MR" /></p>
+<p>You can edit the Applescript .scpt file to choose which version of the include folder is opened:</p>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2017/shaders/include/</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016.5/shaders/include/</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016/shaders/include/</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/shaders/include/</code></li>
+</ul>
+<p><strong>mental ray for Maya 2016.5</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016.5/shaders/include/</code></li>
+</ul>
+<p><strong>mental ray for Maya 2016</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016/shaders/include/</code></li>
+</ul>
+<h4><a name="open-folder-mr-shaders"></a>MR Open Folder MR Shaders</h4>
+<p>Open up the mental ray shaders folder. This is where a mental ray shader .dylib file is stored.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-mr-shaders.png" alt="MR" /></p>
+<p>You can edit the Applescript .scpt file to choose which version of the shaders folder is opened:</p>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2017/shaders/</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016.5/shaders/</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016/shaders/</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/shaders/</code></li>
+</ul>
+<p><strong>mental ray for Maya 2016.5</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016.5/shaders/</code></li>
+</ul>
+<p><strong>mental ray for Maya 2016</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016/shaders/</code></li>
+</ul>
+<h4><a name="open-license-flexnet-publisher"></a>MR Open License FlexNet Publisher</h4>
+<p>Open up the folder of FlexNet Publisher license files.</p>
+<p>macOS lmadmin license path:</p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/FNPLicenseServerManager/licenses/nvidia/</code></li>
+</ul>
+<p>Windows lmadmin license path:</p>
+<ul>
+<li><code>C:\Program Files\FlexNet Publisher License Server Manager/licenses/nvidia/</code></li>
+</ul>
+<p>Linux lmadmin license path:</p>
+<ul>
+<li><code>/opt/FlexNetLicenseServerManager/licenses/nvidia/</code></li>
+</ul>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-license-flexnet-publisher.png" alt="MR" /></p>
+<h4><a name="open-license-nvpac-flexlmrc"></a>MR Open License NVPAC IrayLM .flexlmrc</h4>
+<p>Open up the Iray license manager ~/.flexlmrc file.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-license-nvpac-flexlmrc.png" alt="MR" /></p>
+<h4><a name="open-license-nvpac-iraylm"></a>MR Open License NVPAC IrayLM</h4>
+<p>Open up the folder of NVPAC IRayLM license files.</p>
+<p>macOS IRayLM license path:</p>
+<p><code>/Library/Application Support/NVIDIA Corporation/Iray License Manager/License Store/FLEXlm/</code></p>
+<p>Linux IRayLM license Path:</p>
+<p><code>/opt/nvidia/IrayLicenseManager/data/License Store/FLEXlm/</code></p>
+<p>Windows IRayLM license Path:</p>
+<p><code>C:\ProgramData\NVIDIA Corporation\Iray License Manager\License Store\FLEXlm\</code></p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-license-nvpac-iraylm.png" alt="MR" /></p>
+<h4><a name="open-logfile-flexnet-publisher-lmadmin"></a>MR Open Logfile FlexNet Publisher lmadmin</h4>
+<p>Open up the folder of FlexNet Publisher lmadmin log files.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-logfile-flexnet-publisher-lmadmin.png" alt="MR" /></p>
+<h4><a name="open-logfile-mayarenderlog"></a>MR Open Logfile <code>mayaRender.log</code></h4>
+<p>Open up the Autodesk Maya batch render created <code>mayaRender.log</code> file.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-logfile-mayarenderlog.png" alt="MR" /></p>
+<h4><a name="open-logfile-nvpac-iraylm"></a>MR Open Logfile NVPAC IrayLM</h4>
+<p>Open up the folder of NVPAC IRayLM log files.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-logfile-nvpac-iraylm.png" alt="MR" /></p>
+<h4><a name="open-logfile-raysat"></a>MR Open Logfile Raysat for Maya</h4>
+<p>Open up the raysat log for mental ray standalone.</p>
+<h4><a name="open-maya-env"></a>MR Open <code>Maya.env</code></h4>
+<p>Open up the Maya environment variable file <code>Maya.env</code>.</p>
+<h4><a name="open-mr-standalone-rayrc"></a>MR Open MR Standalone rayrc</h4>
+<p>Open up the mental ray standalone <code>rayrc</code> file.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-mr-standalone-rayrc.png" alt="MR" /></p>
+<h4><a name="open-mrfm-maya-rayhosts"></a>MR Open MRFM maya.rayhosts</h4>
+<p>Open up the mental ray for Maya maya.rayhosts file.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-mrfm-maya-rayhosts.png" alt="MR" /></p>
+<p>You can edit the Applescript .scpt file to choose which version of the rayhosts file is opened:</p>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/plug-ins/maya.rayhosts</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2016.5</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016.5/plug-ins/maya.rayhosts</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2016</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016/plug-ins/maya.rayhosts</code></li>
+</ul>
+<h4><a name="open-mrfm-maya-rayrc"></a>MR Open MRFM maya.rayrc</h4>
+<p>Open up the mental ray for Maya <code>maya.rayrc</code> file.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-mrfm-maya-rayrc.png" alt="MR" /></p>
+<p>You can edit the Applescript .scpt file to choose which version of the rayrc file is opened:</p>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/maya.rayrc</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2016.5</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016.5/maya.rayrc</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2016</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016/maya.rayrc</code></li>
+</ul>
+<h3><a name="open-tools"></a>Open Tools</h3>
+<p>The Open Tools section lets you access the common utilities that are needed when you are troubleshooting a rendering issue.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/textwrangler-open-tools-menu.png" alt="Open Tools Menu" /></p>
+<h4><a name="open-tool-activity-monitor"></a>MR Open Tool Activity Monitor</h4>
+<p>Open up the macOS Activity Monitor program to inspect the running program and the CPU load:</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-activity-monitor.png" alt="MR" /></p>
+<ul>
+<li><code>/Applications/Utilities/Activity Monitor.app</code></li>
+</ul>
+<h4><a name="open-tool-console"></a>MR Open Tool Console</h4>
+<p>Open up the macOS Console program to inspect error logs:</p>
+<ul>
+<li><code>/Applications/Utilities/Console.app</code></li>
+</ul>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-console.png" alt="MR" /></p>
+<h4><a name="open-tool-env"></a>MR Open Tool ENV</h4>
+<p>Display the active environment variable results using the &quot;env&quot; command.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-env.png" alt="MR" /></p>
+<h4><a name="open-tool-imfdisp-with-file-dialog"></a>MR Open Tool imf_disp With File Dialog</h4>
+<p>Open up the mental ray imf_disp image viewer program.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-imfdisp-with-file-dialog.png" alt="MR" /></p>
+<p>You can edit the Applescript .scpt file to choose which version of imf_disp is opened:</p>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2017/bin/imf_disp</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016.5/bin/imf_disp</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016/bin/imf_disp</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/bin/imf_disp</code></li>
+</ul>
+<p><strong>mental ray for Maya 2016.5</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016.5/bin/imf_disp</code></li>
+</ul>
+<p><strong>mental ray for Maya 2016</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016/bin/imf_disp</code></li>
+</ul>
+<h4><a name="open-tool-maya-domemaster3d-dome-diagnostics"></a>MR Open Tool Maya Domemaster3D Dome Diagnostics</h4>
+<p>Run the Domemaster3D <a href="https://github.com/zicher3d-org/domemaster-stereo-shader/wiki/Maya-Dome-Diagnostics-Tool">Dome Diagnostics script</a> in the active Maya Session. This will save a .md markdown format log report to your desktop folder.</p>
+<p>Domemaster3D for Maya can be downloaded from:</p>
+<p><a href="http://www.andrewhazelden.com/blog/2012/04/domemaster3d-stereoscopic-shader-for-autodesk-maya/">http://www.andrewhazelden.com/blog/2012/04/domemaster3d-stereoscopic-shader-for-autodesk-maya/</a></p>
+<p><strong>Note:</strong> Please start Maya and have it running in the background before running this script.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-maya-domemaster3d-dome-diagnostics.png" alt="MR" /></p>
+<h4><a name="open-tool-mr-standalone-collect-maya-libraries"></a>MR Open Tool MR Standalone Collect Maya Libraries</h4>
+<p>Open run the mental ray standalone &quot;collect<em>maya</em>libraries.macosx.sh&quot; script:</p>
+<p><strong>mental ray standalone for Maya 2017</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/bin/collect_maya_libraries.macosx.sh</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2016.5</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016.5/bin/collect_maya_libraries.macosx.sh</code></li>
+</ul>
+<p><strong>mental ray standalone for Maya 2016</strong></p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016/bin/collect_maya_libraries.macosx.sh</code></li>
+</ul>
+<h4><a name="open-tool-nvpac-iraylm"></a>MR Open Tool NVPAC IrayLM</h4>
+<p>Open up the NVPAC IrayLM program:</p>
+<ul>
+<li><code>/Applications/NVIDIA Corporation/Iray License Manager/IrayLM.app</code></li>
+</ul>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-nvpac-iraylm.png" alt="MR" /></p>
+<h4><a name="open-tool-terminal"></a>MR Open Tool Terminal</h4>
+<p>Open up the macOS Terminal program:</p>
+<ul>
+<li><code>/Applications/Utilities/Terminal.app</code></li>
+</ul>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-terminal.png" alt="MR" /></p>
+<h3><a name="open-webpages"></a>Open Webpages</h3>
+<p>The Open Webpages section provides a centralized place for mental ray specific webpage bookmarks. If you are using a floating license of mental ray, the &quot;MR Open Web FlexNet Publisher lmadmin UI&quot; menu item is handy for opening up the webpage address that is used for license management.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/textwrangler-open-webpages-menu.png" alt="Open Webpages Menu" /></p>
+<h4><a name="open-web-mentalray-twitter"></a>MR Open Web @mentalray Twitter</h4>
+<p>Open up the @mentalray Twitter Webpage:</p>
+<p><a href="https://twitter.com/mentalray">https://twitter.com/mentalray</a></p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-mentalray-twitter.png" alt="MR" /></p>
+<h4><a name="open-web-flexnet-publisher-lmadmin-ui"></a>MR Open Web FlexNet Publisher lmadmin UI</h4>
+<p>Open up the FlexNet Publisher lmadmin webpage management UI:</p>
+<p><a href="http://localhost:8090">http://localhost:8090</a></p>
+<p><strong>Note:</strong> If you are setting up lmadmin for the first time the default username is &quot;admin&quot; and the password is &quot;admin&quot;. After you login to the lmadmin webpage you are guided through the process of customizing these login settings.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-flexnet-publisher-lmadmin-ui.png" alt="MR" /></p>
+<h4><a name="open-web-nvidia-arc-forum"></a>MR Open Web NVIDIA ARC Forum</h4>
+<p>Open up the NVIDIA Advanced Rendering Forum:</p>
+<p><a href="https://forum.nvidia-arc.com/">https://forum.nvidia-arc.com/</a></p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-nvidia-arc-forum.png" alt="MR" /></p>
+<h4><a name="open-web-nvidia-inside-mr-blog"></a>MR Open Web NVIDIA Inside mental ray Blog</h4>
+<p>Open up the Inside mental ray Blog Webpage:</p>
+<p><a href="https://blog.mentalray.com/">https://blog.mentalray.com/</a></p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-nvidia-inside-mr-blog.png" alt="MR" /></p>
+<h4><a name="open-web-nvidia-mr-product-page"></a>MR Open Web NVIDIA mental ray Product Page</h4>
+<p>Open up the mental ray product page where new licenses can be purchased and mental ray can be downloaded:</p>
+<p><a href="http://www.nvidia.com/object/nvidia-mental-ray-products.html">http://www.nvidia.com/object/nvidia-mental-ray-products.html</a></p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-nvidia-mr-product-page.png" alt="MR" /></p>
+<h4><a name="open-web-nvidia-software-licensing-center"></a>MR Open Web NVIDIA Software Licensing Center</h4>
+<p>Open up the NVIDIA site which is used to administer your mental ray licenses:</p>
+<p><a href="https://nvidia.flexnetoperations.com/">https://nvidia.flexnetoperations.com/</a></p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-nvidia-software-licensing-center.png" alt="MR" /></p>
+<h4><a name="open-web-nvidia-support"></a>MR Open Web NVIDIA Support</h4>
+<p>Open up the NVIDIA Support Webpage:</p>
+<p><a href="https://nvidia.custhelp.com/app/answers/list">https://nvidia.custhelp.com/app/answers/list</a></p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-web-nvidia-support.png" alt="MR" /></p>
+<h3><a name="render"></a>Render</h3>
+<p>The Render section provides a way to send your mental ray .mi scene files to mental ray standalone for a quick preview rendering.</p>
+<p>The menu items that have the &quot;With File Dialog&quot; at the end of their name will open up a file browser window that allows you to select the .mi scene file you want to render.</p>
+<p>The rendering menu items that don't have that addition on the end of their names will send the active document you are editing in TextWrangler/BBEdit to mental ray standalone for rendering.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/textwrangler-render-menu.png" alt="Render Menu" /></p>
+<h4><a name="mr-standalone-render-distributed-with-file-dialog"></a>MR Standalone Render Distributed With File Dialog</h4>
+<p>Open a file dialog and then render a selected .mi file from your hard disk.</p>
+<p>This applescript has a <code>mrRenderHosts</code> variable that lets you list multiple mental ray standalone render nodes. These nodes will be used to speed up the rendering process.</p>
+<p><strong>mrRenderHosts Example:</strong></p>
+<p><code>set mrRenderHosts to &quot;Tamarack:14170 localhost:14170&quot;</code></p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mr-standalone-render-with-file-dialog.png" alt="MR" /></p>
+<h4><a name="mr-standalone-render-distributed"></a>MR Standalone Render Distributed</h4>
+<p>Render a selected .mi file from your hard disk.</p>
+<p>This applescript has a <code>mrRenderHosts</code> variable that lets you list multiple mental ray standalone render nodes. These nodes will be used to speed up the rendering process.</p>
+<p><strong>mrRenderHosts Example:</strong></p>
+<p><code>set mrRenderHosts to &quot;Tamarack:14170 localhost:14170&quot;</code></p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mr-standalone-render.png" alt="MR" /></p>
+<h4><a name="mr-standalone-render-with-file-dialog"></a>MR Standalone Render With File Dialog</h4>
+<p>Open a file dialog and then render a selected .mi file from your hard disk.</p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mr-standalone-render-with-file-dialog.png" alt="MR" /></p>
+<h4><a name="mr-standalone-render"></a>MR Standalone Render</h4>
+<p>Render a selected .mi file from your hard disk.</p>
+<p><strong>Note:</strong> If you want to disable the imf_display preview window and instead see the log output results from the mental ray standalone rendering you will have to edit the Applescript .scpt file's code just below the section titled <code>-- Define the MR Standalone command line arguments</code>.</p>
+<p>To do this you need to toggle the commented out line so this line is active instead:</p>
+<p><code>-- set mrOptions to mrFile &amp; &quot; &quot; &amp; &quot;-v 5 -render &quot; &amp; mrFrameRange &amp; &quot; &gt; &quot; &amp; quoted form of POSIX path of mrErrorPath &amp; &quot; 2&gt;&amp;1&quot;</code></p>
+<p><img src="http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mr-standalone-render.png" alt="MR" /></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

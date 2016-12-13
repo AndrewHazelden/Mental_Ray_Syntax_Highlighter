@@ -10,8 +10,13 @@ This version of the syntax highlighting module works with [Notepad++](https://no
 
 The Mental Ray Syntax Highlighter module is a free download.
 
-You can download the latest version here:   
-[http://www.andrewhazelden.com/blog/2013/09/mental-ray-syntax-highlighter/](http://www.andrewhazelden.com/blog/2013/09/mental-ray-syntax-highlighter)
+You can download a copy from my blog here:  
+[http://www.andrewhazelden.com/blog/2013/09/mental-ray-syntax-highlighter/](http://www.andrewhazelden.com/blog/2013/09/mental-ray-syntax-highlighter/)
+
+or
+
+You can download a copy from GitHub here:  
+[Mental Ray Syntax Highlighter GitHub Project](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/releases)
 
 ## Installation ##
 
@@ -30,7 +35,6 @@ In the Style Configurator window select the **Obsidian** theme and click the **S
 **Step 3.** Let's load the custom "Mental Ray" syntax highlighting module. Open the **Language** menu in Notepad++ and select the **"Define your language..."** menu item. The **User Defined Language** window will load.
 
 ![Load the Define Your Language Window](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/4_define_your_language.png)
-
 
 **Step 4.** In the **User Defined Language** window, click on the **Import** button to load the XML based language file.
 
@@ -53,7 +57,6 @@ If you open a Mental Ray .mi include file at this point you will see formatted t
 Open the **Language** menu and select **Mental Ray**. This will turn on syntax highlighting and make it easier to develop complex include files.
 
 ![Select the Mental Ray Language](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/9_select_the_language.png)
-
 
 Here is an example Mental Ray .mi file with Notepad++ based syntax highlighting enabled:
 

@@ -22,7 +22,6 @@ In addition to the syntax highligher modules, a suite of mental ray IDE (Integra
 
 ## BBEdit / TextWrangler Scripts Summary ##
 
-
 - [Convert](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#convert)
 	- [MR Convert .mi ASCII to Binary With File Dialog](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#convert-ascii-to-binary-with-file-dialog)
 	- [MR Convert .mi ASCII to Binary](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#convert-ascii-to-binary)
@@ -58,9 +57,7 @@ In addition to the syntax highligher modules, a suite of mental ray IDE (Integra
 	- [MR Open MR Standalone rayrc](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#open-mr-standalone-rayrc)
 	- [MR Open MRFM maya.rayhosts](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#open-mrfm-maya-rayhosts)
 	- [MR Open MRFM maya.rayrc](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#open-mrfm-maya-rayrc)
-
 - [Open Tools](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#open-tools)
-
 	- [MR Open Tool Activity Monitor](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#open-tool-activity-monitor)
 	- [MR Open Tool Console](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#open-tool-console)
 	- [MR Open Tool ENV](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#open-tool-env)
