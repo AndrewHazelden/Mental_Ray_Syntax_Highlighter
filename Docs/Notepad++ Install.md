@@ -1,6 +1,6 @@
 # Notepad++ Install #
 
-![Sample .mi file](screenshots/mental_ray_syntax_highlighter.png)
+![Sample .mi file](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mental_ray_syntax_highlighter.png)
 
 ## Requirements ##
 
@@ -17,47 +17,47 @@ You can download the latest version here:
 
 **Step 1.**  [Download Notepad++](http://notepad-plus-plus.org/download/v6.4.5.html) and install it on your system. After you start Notepad++ you will see a blank text editing window.
 
-![Starting up Notepad++](screenshots/1_notepad++_UI_start.png)
+![Starting up Notepad++](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/1_notepad++_UI_start.png)
 
 **Step 2.**  The syntax highlighting module has been customized to work with the dark background based **Obsidian** theme. To load the Obsidian theme in Notepad++, go to the **Settings** menu and select **"Style Configurator..."**
 
-![Open the Style Configurator](screenshots/2_style_configurator.png)
+![Open the Style Configurator](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/2_style_configurator.png)
 
 In the Style Configurator window select the **Obsidian** theme and click the **Save and Close** button.
 
-![Choose the Obsidian Theme](screenshots/3_style_configurator_obsidian.png)
+![Choose the Obsidian Theme](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/3_style_configurator_obsidian.png)
 
 **Step 3.** Let's load the custom "Mental Ray" syntax highlighting module. Open the **Language** menu in Notepad++ and select the **"Define your language..."** menu item. The **User Defined Language** window will load.
 
-![Load the Define Your Language Window](screenshots/4_define_your_language.png)
+![Load the Define Your Language Window](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/4_define_your_language.png)
 
 
 **Step 4.** In the **User Defined Language** window, click on the **Import** button to load the XML based language file.
 
-![Click the "Import" button](screenshots/5_import_a_language.png)
+![Click the "Import" button](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/5_import_a_language.png)
 
 In the open dialog select the **"Mental Ray Syntax Highlighter.xml"** file and click **open**.
 
-![Select the Mental Ray Syntax Highlighter.xml file ](screenshots/6_select_the_language_file.png)
+![Select the Mental Ray Syntax Highlighter.xml file ](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/6_select_the_language_file.png)
 
 If the file was loaded correctly an "Import Successful" notice will appear.  Click the **OK** button to continue. At this point you should close the "User Defined Language" widow by clicking on the window's **X** shaped close button.
 
-![You will see a "Import Successful" notice](screenshots/7_import_success.png)
+![You will see a "Import Successful" notice](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/7_import_success.png)
 
 **Step 5.**  We need to restart Notepad++ for the new language module to be listed in the Notepad++ language menu.
 
-![This is an unformatted script](screenshots/8_unstyled_text.png)
+![This is an unformatted script](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/8_unstyled_text.png)
 
 If you open a Mental Ray .mi include file at this point you will see formatted text. If you are working on an include file without the .mi extension you can select the language manually.
 
 Open the **Language** menu and select **Mental Ray**. This will turn on syntax highlighting and make it easier to develop complex include files.
 
-![Select the Mental Ray Language](screenshots/9_select_the_language.png)
+![Select the Mental Ray Language](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/9_select_the_language.png)
 
 
 Here is an example Mental Ray .mi file with Notepad++ based syntax highlighting enabled:
 
-![This is a sample show script that has syntax highlighting](screenshots/10_highlighted_mental_ray.png)
+![This is a sample show script that has syntax highlighting](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/10_highlighted_mental_ray.png)
 
 * * *
 

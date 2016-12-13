@@ -1,4 +1,6 @@
-![Sample .mi file](screenshots/tw_mental_ray_syntax_highlighter.png)
+# BBEdit and TextWrangler Install #
+
+![Sample .mi file](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/tw_mental_ray_syntax_highlighter.png)
 
 ## Requirements ##
 
@@ -21,7 +23,7 @@ You can download a copy from GitHub here:
 
 **Step 1.**  [Download TextWrangler](http://www.barebones.com/products/textwrangler/) and install it on your system. If you own a copy of [BBEdit](http://www.barebones.com/products/bbedit/) you can use it instead. After you install the software, run it once to create the preference folders.
 
-![Download Notepad++](screenshots/download_text_wrangler.png)
+![Download Notepad++](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/download_text_wrangler.png)
 
 **Step 2.**  Copy the "Mental Ray.plist" and  "FlexNet Publisher License.plist" files from the **install/Language Modules** folder to your Language Modules folder.
 
@@ -35,11 +37,11 @@ If you are using BBEdit the module belongs in this folder:
 
 On Mac OS X Lion / Mountain Lion you can open the hidden **~/Library** folder by switching to the Finder. From the "Go" Menu select, "Go to Folder..." or press the hotkey **Shift-Command-G**.
 
-![Run the Go to Folder Menu item](screenshots/go-to-folder.png)
+![Run the Go to Folder Menu item](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/go-to-folder.png)
 
 Paste in the Languages Module folder path and hit "go".
 
-![Paste in the Language Modules Path](screenshots/go-to-app-support.png)
+![Paste in the Language Modules Path](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/go-to-app-support.png)
 
 If you are running Mountain Lion and the BBEdit / TextWrangler "Language Modules" folder doesn't exist you can create the folders manually. A quick way to create the folders is to use the terminal:
 
@@ -51,26 +53,26 @@ BBEdit Folder Creation Command:
 
 > mkdir -p ~/"Library/Application Support/BBEdit/Language Modules/"
 
-![Make the directory](screenshots/make_the_folder.png)
+![Make the directory](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/make_the_folder.png)
 
 Once you are in the Language Modules folder you can copy the **Mental Ray.plist** and **FlexNet Publisher License.plist** files in place.
 
-![Copy the Mental Ray.plist file.](screenshots/copy-plist-to-folder.png)
+![Copy the Mental Ray.plist file.](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/copy-plist-to-folder.png)
 
 **Step 3.**  We need to restart TextWrangler for the new language module to be listed in the TextWrangler language popup menu.
 
 If you open a Mental Ray .mi include file at this point you will see formatted text. If you are working on an include file without the .mi extension you can select the language manually.
 
-![Select the Mental Ray Language](screenshots/no-syntax-hightlighting.png)
+![Select the Mental Ray Language](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/no-syntax-hightlighting.png)
 
 Open the **Language** popup menu at the bottom left of the text editor window and select **Mental Ray**. This will turn on syntax highlighting.
 
-![Select the Mental Ray Language](screenshots/choose-the-language.png)
+![Select the Mental Ray Language](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/choose-the-language.png)
 
 
 Here is an example Mental Ray .mi file with syntax highlighting enabled:
 
-![This is a sample show script that has syntax highlighting](screenshots/textwrangler_syntax_hightlighting_enabled.png)
+![This is a sample show script that has syntax highlighting](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/textwrangler_syntax_hightlighting_enabled.png)
 
 ## Download a Color Scheme ##
 
@@ -78,19 +80,19 @@ If you are new to TextWrangler or BBEdit you will probably want to download a co
 
 This is the view with the default color scheme that comes with TextWrangler / BBEdit:  
 
-![Default Color Scheme](screenshots/default_formatting.png)
+![Default Color Scheme](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/default_formatting.png)
 
 * * *
 
 This is the view with the [Charcoal Color Scheme](http://www.andrewhazelden.com/blog/2012/09/charcoal-color-scheme-for-textwrangler-and-bbedit/) in action:  
 
-![Default Color Scheme](screenshots/charcoal_formatting.png)
+![Default Color Scheme](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/charcoal_formatting.png)
 
 * * *
 
 This is the view with the  [Midnight Blue Color Scheme](http://www.andrewhazelden.com/blog/2012/06/midnight-blue-color-scheme-for-textwrangler-and-bbedit/) in action:  
 
-![Default Color Scheme](screenshots/midnight_blue_formatted.png)
+![Default Color Scheme](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/midnight_blue_formatted.png)
 
 ## Install the Apple Scripts ##
 
@@ -103,6 +105,8 @@ If you are using TextWrangler the scripts belongs in this folder:
 If you are using BBEdit the scripts belongs in this folder:  
 
     ~/Library/Application Support/BBEdit/scripts/
+
+![TextWrangler Scripts Folder](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/textwrangler_mental_ray_applescripts.png)
 
 * * *
 

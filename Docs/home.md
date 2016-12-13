@@ -2,11 +2,11 @@
 
 Click the **[Pages Tab](_pages)** to start browsing the wiki contents.
 
-The  Notepad++, BBEdit, and TextWrangler syntax highlighting modules work with code from [Mental Ray and iRay](http://www.nvidia-arc.com/index.php). The new modules makes it easier for a VFX artist or technical director to edit a Mental Ray .mi include file.
+The  Notepad++, BBEdit, and TextWrangler syntax highlighting modules work with code from [Mental Ray](http://www.nvidia-arc.com/index.php). The new modules makes it easier for a VFX artist or technical director to edit a Mental Ray .mi include file.
 
 There is a new set of mental ray IDE (Integrated Development Environment) scripts available for TextWrangler and BBEdit that boost your productivity when working with and setting up mental ray standalone.
 
-![Mental Ray Scripts Menu](screenshots/mentalray-textwrangler-menus.gif)
+![Mental Ray Scripts Menu](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mentalray-textwrangler-menus.gif)
 
 ## Installation Topics ##
 
