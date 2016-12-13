@@ -82,19 +82,19 @@ Open a file dialog and then convert a selected ASCII format .mi file into a comp
 
 #### <a name="convert-ascii-to-binary"></a>MR Convert .mi ASCII to Binary ####
 
-Take the currently open ASCII format .mi file and convert it into a compressed binary format .mi file
+Take the currently open ASCII format .mi file and convert it into a compressed binary format .mi file.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/convert-ascii-to-binary.png)
 
 #### <a name="convert-binary-to-ascii-with-file-dialog"></a>MR Convert .mi Binary to ASCII With File Dialog ####
 
-Open a file dialog and then convert a selected compressed binary format .mi file into an ASCII format .mi file
+Open a file dialog and then convert a selected compressed binary format .mi file into an ASCII format .mi file.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/convert-with-file-dialog.png)
 
 #### <a name="convert-binary-to-ascii"></a>MR Convert .mi Binary to ASCII ####
 
-Take the currently open compressed binary format .mi file and convert it into an ASCII format .mi file
+Take the currently open compressed binary format .mi file and convert it into an ASCII format .mi file.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/convert-binary-to-ascii.png)
 
@@ -136,19 +136,19 @@ Open up the mental ray for Maya plugin PDF documentation.
 
 #### <a name="open-documentation-nvpac-iraylm"></a>MR Open Documentation NVPAC IrayLM ####
 
-Open up the NVPAC IrayLM.pdf
+Open up the NVPAC IrayLM.pdf documentation.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-nvpac-iraylm.png)
 
 #### <a name="open-documentation-release-notes-mr-standalone"></a>MR Open Documentation Release Notes MR Standalone ####
 
-Open up the mental ray standalone mentalray_relnotes.html file
+Open up the mental ray standalone mentalray_relnotes.html file.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-release-notes-mr-standalone.png)
 
 #### <a name="open-documentation-release-notes-mrfm"></a>MR Open Documentation Release Notes MRFM ####
 
-Open up the mental ray for Maya mentalray_relnotes.html file
+Open up the mental ray for Maya mentalray_relnotes.html file.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-documentation-release-notes-mrfm.png)
 
@@ -187,13 +187,13 @@ The Open Files and Folders section makes it easy to open up the configuration fi
 
 #### <a name="open-dot-bash-profile"></a>MR Open `.bash_profile` ####
 
-Open up the  `~/.bash_profile` which is used to configure environment variables
+Open up the  `~/.bash_profile` which is used to configure environment variables.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-dot-bash-profile.png)
 
 #### <a name="open-dot-profile"></a>MR Open `.profile` ####
 
-Open up the  `~/.profile` which is used to configure environment variables
+Open up the  `~/.profile` which is used to configure environment variables.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-dot-profile.png)
 
@@ -211,7 +211,7 @@ Open up the macOS `/private/var/folders/` based temporary folder.
 
 #### <a name="open-folder-mr-devkit"></a>MR Open Folder MR DevKit ####
 
-Open up the mental ray devkit folder. This is where a mental ray stores the .h and resources needed if you want to compile your own custom shaders.
+Open up the mental ray devkit folder. This is where mental ray stores the .h header files and resources needed if you want to compile your own custom shaders.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-folder-mr-devkit.png)
 
@@ -221,15 +221,15 @@ You can edit the Applescript .scpt file to choose which version of the devkit fo
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2017/devkit/`
 
-**mental ray standalone for Maya 2017**
+**mental ray standalone for Maya 2016.5**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016.5/devkit/`
 
-**mental ray standalone for Maya 2017**
+**mental ray standalone for Maya 2016**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016/devkit/`
 
-**mental ray standalone for Maya 2017**
+**mental ray for Maya 2017**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/devkit/`
 
@@ -253,15 +253,15 @@ You can edit the Applescript .scpt file to choose which version of the include f
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2017/shaders/include/`
 
-**mental ray standalone for Maya 2017**
+**mental ray standalone for Maya 2016.5**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016.5/shaders/include/`
 
-**mental ray standalone for Maya 2017**
+**mental ray standalone for Maya 2016**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016/shaders/include/`
 
-**mental ray standalone for Maya 2017**
+**mental ray for Maya 2017**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/shaders/include/`
 
@@ -285,15 +285,15 @@ You can edit the Applescript .scpt file to choose which version of the shaders f
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2017/shaders/`
 
-**mental ray standalone for Maya 2017**
+**mental ray standalone for Maya 2016.5**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016.5/shaders/`
 
-**mental ray standalone for Maya 2017**
+**mental ray standalone for Maya 2016**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016/shaders/`
 
-**mental ray standalone for Maya 2017**
+**mental ray for Maya 2017**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/shaders/`
 
@@ -331,17 +331,17 @@ Open up the Iray license manager ~/.flexlmrc file.
 
 #### <a name="open-license-nvpac-iraylm"></a>MR Open License NVPAC IrayLM ####
 
-Open up the folder of NVPAC IRayLM license files.
+Open up the folder of NVPAC IrayLM license files.
 
-macOS IRayLM license path:
+macOS IrayLM license path:
 
 `/Library/Application Support/NVIDIA Corporation/Iray License Manager/License Store/FLEXlm/`
 
-Linux IRayLM license Path:
+Linux IrayLM license Path:
 
 `/opt/nvidia/IrayLicenseManager/data/License Store/FLEXlm/`
 
-Windows IRayLM license Path:
+Windows IrayLM license Path:
 
 `C:\ProgramData\NVIDIA Corporation\Iray License Manager\License Store\FLEXlm\`
 
@@ -361,7 +361,7 @@ Open up the Autodesk Maya batch render created `mayaRender.log` file.
 
 #### <a name="open-logfile-nvpac-iraylm"></a>MR Open Logfile NVPAC IrayLM ####
 
-Open up the folder of NVPAC IRayLM log files.
+Open up the folder of NVPAC IrayLM log files.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-logfile-nvpac-iraylm.png)
 
@@ -385,7 +385,7 @@ Open up the raysat log for mental ray standalone.
 
 #### <a name="open-maya-env"></a>MR Open `Maya.env` ####
 
-Open up the Maya environment variable file `Maya.env`.
+Open up the Maya environment variable `Maya.env` file.
 
 #### <a name="open-mr-standalone-rayrc"></a>MR Open MR Standalone rayrc ####
 
@@ -395,21 +395,21 @@ Open up the mental ray standalone `rayrc` file.
 
 #### <a name="open-mrfm-maya-rayhosts"></a>MR Open MRFM maya.rayhosts ####
 
-Open up the mental ray for Maya maya.rayhosts file.
+Open up the mental ray for Maya `maya.rayhosts` file.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-mrfm-maya-rayhosts.png)
 
 You can edit the Applescript .scpt file to choose which version of the rayhosts file is opened:
 
-**mental ray standalone for Maya 2017**
+**mental ray for Maya 2017**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/plug-ins/maya.rayhosts`
 
-**mental ray standalone for Maya 2016.5**
+**mental ray for Maya 2016.5**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016.5/plug-ins/maya.rayhosts`
 
-**mental ray standalone for Maya 2016**
+**mental ray for Maya 2016**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016/plug-ins/maya.rayhosts`
 
@@ -421,15 +421,15 @@ Open up the mental ray for Maya `maya.rayrc` file.
 
 You can edit the Applescript .scpt file to choose which version of the rayrc file is opened:
 
-**mental ray standalone for Maya 2017**
+**mental ray for Maya 2017**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/maya.rayrc`
 
-**mental ray standalone for Maya 2016.5**
+**mental ray for Maya 2016.5**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016.5/maya.rayrc`
 
-**mental ray standalone for Maya 2016**
+**mental ray for Maya 2016**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016/maya.rayrc`
 
@@ -441,11 +441,11 @@ The Open Tools section lets you access the common utilities that are needed when
 
 #### <a name="open-tool-activity-monitor"></a>MR Open Tool Activity Monitor ####
 
-Open up the macOS Activity Monitor program to inspect the running program and the CPU load:
-
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-activity-monitor.png)
+Open up the macOS Activity Monitor program to inspect all of the programs that are running on the computer and to watch the CPU load:
 
 - `/Applications/Utilities/Activity Monitor.app`
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-activity-monitor.png)
 
 #### <a name="open-tool-console"></a>MR Open Tool Console ####
 
@@ -473,15 +473,15 @@ You can edit the Applescript .scpt file to choose which version of imf_disp is o
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2017/bin/imf_disp`
 
-**mental ray standalone for Maya 2017**
+**mental ray standalone for Maya 2016.5**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016.5/bin/imf_disp`
 
-**mental ray standalone for Maya 2017**
+**mental ray standalone for Maya 2016**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016/bin/imf_disp`
 
-**mental ray standalone for Maya 2017**
+**mental ray for Maya 2017**
 
 - `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/bin/imf_disp`
 
@@ -507,23 +507,23 @@ Domemaster3D for Maya can be downloaded from:
 
 #### <a name="open-tool-mr-standalone-collect-maya-libraries"></a>MR Open Tool MR Standalone Collect Maya Libraries ####
 
-Open run the mental ray standalone "collect_maya_libraries.macosx.sh" script:
+Run the mental ray standalone "collect_maya_libraries.macosx.sh" BASH script. This is used to copy the Autodesk Maya provided .dylib libraries into the mental ray program folder:
 
 **mental ray standalone for Maya 2017**
 
-- `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2017/bin/collect_maya_libraries.macosx.sh`
+- `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2017/bin/collect_maya_libraries.macosx.sh`
 
 **mental ray standalone for Maya 2016.5**
 
-- `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016.5/bin/collect_maya_libraries.macosx.sh`
+- `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016.5/bin/collect_maya_libraries.macosx.sh`
 
 **mental ray standalone for Maya 2016**
 
-- `/Applications/NVIDIA Corporation/mentalray-3.14-for-Maya-2016/bin/collect_maya_libraries.macosx.sh`
+- `/Applications/NVIDIA Corporation/mentalray-3.14-standalone-for-Maya-2016/bin/collect_maya_libraries.macosx.sh`
 
 #### <a name="open-tool-nvpac-iraylm"></a>MR Open Tool NVPAC IrayLM ####
 
-Open up the NVPAC IrayLM program:
+Open up the NVPAC IrayLM mental ray licensing program:
 
 - `/Applications/NVIDIA Corporation/Iray License Manager/IrayLM.app`
 
@@ -605,7 +605,7 @@ Open up the NVIDIA Support Webpage:
 
 The Render section provides a way to send your mental ray .mi scene files to mental ray standalone for a quick preview rendering.
 
-The menu items that have the "With File Dialog" at the end of their name will open up a file browser window that allows you to select the .mi scene file you want to render.
+The menu items that have the "With File Dialog" at the end of their name will open up a file browser window that allows you to select the specific mental ray .mi scene file you want to render.
 
 The rendering menu items that don't have that addition on the end of their names will send the active document you are editing in TextWrangler/BBEdit to mental ray standalone for rendering.
 
