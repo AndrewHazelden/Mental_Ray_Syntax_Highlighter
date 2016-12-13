@@ -421,13 +421,13 @@ The Open Tools section lets you access the common utilities that are needed when
 
 Open up the macOS Activity Monitor program to inspect the running program and the CPU load:
 
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-activity-monitor.png)
 
 - `/Applications/Utilities/Activity Monitor.app`
 
 #### <a name="open-tool-console"></a>MR Open Tool Console ####
 
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-console.png)
 
 Open up the macOS Console program to inspect error logs:
 
@@ -435,13 +435,13 @@ Open up the macOS Console program to inspect error logs:
 
 #### <a name="open-tool-env"></a>MR Open Tool ENV ####
 
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-env.png)
 
 Display the active environment variable results using the "env" command.
 
 #### <a name="open-tool-imfdisp-with-file-dialog"></a>MR Open Tool imf_disp With File Dialog ####
 
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-imfdisp-with-file-dialog.png)
 
 Open up the mental ray imf_disp image viewer program. 
 
@@ -481,11 +481,11 @@ Domemaster3D for Maya can be downloaded from:
 
 **Note:** Please start Maya and have it running in the background before running this script.
 
-![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/.png)
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-maya-domemaster3d-dome-diagnostics.png)
 
 #### <a name="open-tool-mr-standalone-collect-maya-libraries"></a>MR Open Tool MR Standalone Collect Maya Libraries ####
 
-Open run the mental ray satndalone "collect_maya_libraries.macosx.sh" script:
+Open run the mental ray standalone "collect_maya_libraries.macosx.sh" script:
 
 **mental ray standalone for Maya 2017**
 
