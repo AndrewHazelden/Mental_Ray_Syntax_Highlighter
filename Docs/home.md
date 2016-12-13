@@ -81,4 +81,4 @@ There is a new set of mental ray IDE (Integrated Development Environment) script
 	- [MR Standalone Render Distributed With File Dialog](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#mr-standalone-render-distributed-with-file-dialog)
 	- [MR Standalone Render Distributed](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#mr-standalone-render-distributed)
 	- [MR Standalone Render With File Dialog](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#mr-standalone-render-with-file-dialog)
-	- [MR Standalone Render](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#)
+	- [MR Standalone Render](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/wiki/BBEdit-and-TextWrangler-Scripts#mr-standalone-render)

@@ -64,7 +64,7 @@ There is a new set of mental ray IDE (Integrated Development Environment) script
 	- [MR Standalone Render Distributed With File Dialog](#mr-standalone-render-distributed-with-file-dialog)
 	- [MR Standalone Render Distributed](#mr-standalone-render-distributed)
 	- [MR Standalone Render With File Dialog](#mr-standalone-render-with-file-dialog)
-	- [MR Standalone Render](#)
+	- [MR Standalone Render](#mr-standalone-render)
 
 ## BBEdit / TextWrangler Script Docs ##
 
@@ -625,7 +625,7 @@ Render a selected .mi file from your hard disk.
 
 **Note:** If you want to disable the imf_display preview window and instead see the log output results from the mental ray standalone rendering you will have to edit the Applescript .scpt file's code just below the section titled `-- Define the MR Standalone command line arguments`.
 
-You need to toggle the commented out line so this the following line is active:
+To do this you need to toggle the commented out line so this line is active instead:
 
 `-- set mrOptions to mrFile & " " & "-v 5 -render " & mrFrameRange & " > " & quoted form of POSIX path of mrErrorPath & " 2>&1"`
 
