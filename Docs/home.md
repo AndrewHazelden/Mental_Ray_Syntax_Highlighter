@@ -2,15 +2,15 @@
 
 Click the **[Pages Tab](_pages)** to start browsing the wiki contents.
 
-This collection [mental ray](http://www.nvidia.com/object/nvidia-mental-ray-products.html) syntax highlighting modules work with Notepad++, BBEdit, and TextWrangler. The modules make it easier for a VFX artist or technical director to edit a mental ray .mi include file and scene files.
+This collection of [mental ray](http://www.nvidia.com/object/nvidia-mental-ray-products.html) syntax highlighting modules work with Notepad++, BBEdit, and TextWrangler. The modules make it easier for a VFX artist or technical director to edit mental ray .mi include files and scene files.
 
-A Flexera FlexNet Publisher lmadmin and IrayLM/NVPAC .lic license syntax highlighter module is also included. This makes it easier to view a generated license file and edit properties like the host name or other parameters when you are setting up a new floating license server.
+A Flexera FlexNet Publisher lmadmin and IrayLM/NVPAC .lic license syntax highlighter module is also included. This makes it easier to view a generated license file and edit properties like the server's hostname or other parameters when you are setting up a new floating license server.
 
 *The mental ray syntax highlighters are distributed under a GPL v3 license.*
 
 ## mental ray IDE Tools ##
 
-In addition to the syntax highligher modules, a suite of mental ray IDE (Integrated Development Environment) tools are provided. These scripts work with BBEdit and TextWrangler. This collection of rendering TD centric scripts will boost your productivity when working with mental ray standalone, or mental ray for Maya.
+In addition to the syntax highlighter modules, a suite of mental ray IDE (Integrated Development Environment) tools are provided. These scripts work with BBEdit and TextWrangler. The rendering TD centric scripts will boost your productivity when working with mental ray standalone, or mental ray for Maya.
 
 ![mental ray Scripts Menu](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mentalray-textwrangler-menus.gif)
 
