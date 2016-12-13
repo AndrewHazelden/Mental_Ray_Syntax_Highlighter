@@ -10,7 +10,7 @@ A Flexera FlexNet Publisher lmadmin and IrayLM/NVPAC .lic license syntax highlig
 
 ## mental ray IDE Tools ##
 
-There is a new set of mental ray IDE (Integrated Development Environment) scripts available for TextWrangler and BBEdit that boost your productivity when working with and setting up mental ray standalone.
+In addition to the syntax highligher modules, a suite of mental ray IDE (Integrated Development Environment) tools are provided. These scripts work with BBEdit and TextWrangler. This collection of rendering TD centric scripts will boost your productivity when working with mental ray standalone, or mental ray for Maya.
 
 ![mental ray Scripts Menu](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mentalray-textwrangler-menus.gif)
 
