@@ -441,7 +441,7 @@ Display the active environment variable results using the "env" command.
 
 #### <a name="open-tool-imfdisp-with-file-dialog"></a>MR Open Tool imf_disp With File Dialog ####
 
-Open up the mental ray imf_disp image viewer program. 
+Open up the mental ray imf_disp image viewer program.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-tool-imfdisp-with-file-dialog.png)
 
@@ -473,9 +473,9 @@ You can edit the Applescript .scpt file to choose which version of imf_disp is o
 
 #### <a name="open-tool-maya-domemaster3d-dome-diagnostics"></a>MR Open Tool Maya Domemaster3D Dome Diagnostics ####
 
-Run the Domemaster3D [Dome Diagnostics script](https://github.com/zicher3d-org/domemaster-stereo-shader/wiki/Maya-Dome-Diagnostics-Tool) in the active Maya Session. This will save a .md markdown format log report to your desktop folder. 
+Run the Domemaster3D [Dome Diagnostics script](https://github.com/zicher3d-org/domemaster-stereo-shader/wiki/Maya-Dome-Diagnostics-Tool) in the active Maya Session. This will save a .md markdown format log report to your desktop folder.
 
-Domemaster3D for Maya can be downloaded from: 
+Domemaster3D for Maya can be downloaded from:
 
 [http://www.andrewhazelden.com/blog/2012/04/domemaster3d-stereoscopic-shader-for-autodesk-maya/](http://www.andrewhazelden.com/blog/2012/04/domemaster3d-stereoscopic-shader-for-autodesk-maya/)
 
@@ -603,7 +603,7 @@ This applescript has a `mrRenderHosts` variable that lets you list multiple ment
 
 #### <a name="mr-standalone-render-distributed"></a>MR Standalone Render Distributed ####
 
-Render a selected .mi file from your hard disk. 
+Render a selected .mi file from your hard disk.
 
 This applescript has a `mrRenderHosts` variable that lets you list multiple mental ray standalone render nodes. These nodes will be used to speed up the rendering process.
 
@@ -623,7 +623,7 @@ Open a file dialog and then render a selected .mi file from your hard disk.
 
 Render a selected .mi file from your hard disk.
 
-**Note:** If you want to disable the imf_display preview window and instead see the log output results from the mental ray standalone rendering you will have to edit the Applescript .scpt file's code just below the section titled `-- Define the MR Standalone command line arguments`. 
+**Note:** If you want to disable the imf_display preview window and instead see the log output results from the mental ray standalone rendering you will have to edit the Applescript .scpt file's code just below the section titled `-- Define the MR Standalone command line arguments`.
 
 You need to toggle the commented out line so this the following line is active:
 
