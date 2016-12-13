@@ -76,19 +76,27 @@ The convert menu is used to translate the format of your .mi mental ray scenes. 
 
 #### <a name="convert-ascii-to-binary-with-file-dialog"></a>MR Convert .mi ASCII to Binary With File Dialog ####
 
-Open a file dialog and then convert a selected .mi file into a compressed binary format .mi file.
+Open a file dialog and then convert a selected ASCII format .mi file into a compressed binary format .mi file.
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/convert-with-file-dialog.png)
 
 #### <a name="convert-ascii-to-binary"></a>MR Convert .mi ASCII to Binary ####
 
-Take the currently open .mi file and convert it into a compressed binary format .mi file
+Take the currently open ASCII format .mi file and convert it into a compressed binary format .mi file
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/convert-ascii-to-binary.png)
 
 #### <a name="convert-binary-to-ascii-with-file-dialog"></a>MR Convert .mi Binary to ASCII With File Dialog ####
 
-Open a file dialog and then convert a selected .mi file into an ASCII format .mi file
+Open a file dialog and then convert a selected compressed binary format .mi file into an ASCII format .mi file
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/convert-with-file-dialog.png)
 
 #### <a name="convert-binary-to-ascii"></a>MR Convert .mi Binary to ASCII ####
 
-Take the currently open .mi file and convert it into an ASCII format .mi file
+Take the currently open compressed binary format .mi file and convert it into an ASCII format .mi file
+
+![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/convert-binary-to-ascii.png)
 
 ### <a name="open-documentation"></a>Open Documentation ###
 
@@ -356,6 +364,20 @@ Open up the Autodesk Maya batch render created `mayaRender.log` file.
 Open up the folder of NVPAC IRayLM log files.
 
 ![MR](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/open-logfile-nvpac-iraylm.png)
+
+These log files are located at:
+
+macOS IrayLM Logs:
+
+- `/Library/Application Support/NVIDIA Corporation/Iray License Manager/Logs/`
+
+Linux IrayLM Logs:
+
+- `/opt/nvidia/IrayLicenseManager/Logs/`
+
+Windows IrayLM Logs:
+
+- `C:\ProgramData\NVIDIA Corporation\Iray License Manager\Logs\`
 
 #### <a name="open-logfile-raysat"></a>MR Open Logfile Raysat for Maya ####
 
