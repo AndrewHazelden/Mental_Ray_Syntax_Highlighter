@@ -25,7 +25,7 @@ A Flexera FlexNet Publisher lmadmin and IrayLM .lic license syntax highlighter m
 
 In addition to the syntax highlighter modules, a suite of mental ray IDE (Integrated Development Environment) tools are provided. These scripts work with BBEdit and TextWrangler. The rendering TD centric scripts will boost your productivity when working with mental ray standalone, or mental ray for Maya.
 
-![mental ray Scripts Menu](http://www.andrewhazelden.com/projects/mental-ray-syntax-highlighter/images/mentalray-textwrangler-menus.gif)
+![mental ray Scripts Menu](https://github.com/AndrewHazelden/Mental_Ray_Syntax_Highlighter/raw/master/Docs/images/mentalray-textwrangler-menus.gif)
 
 ## Notes ##
 
